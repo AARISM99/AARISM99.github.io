@@ -22,7 +22,7 @@ export class TapToTopComponent {
   }
 
   scrollFunction() {
-    console.log(this.tapToTopBtn);
+    // console.log(this.tapToTopBtn);
     // console.log("scroll function called");
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       this.tapToTopBtn.style.display = "block";
@@ -30,7 +30,7 @@ export class TapToTopComponent {
     else {
       this.tapToTopBtn.style.display = "none";
     }
-    console.log(this.tapToTopBtn);
+    // console.log(this.tapToTopBtn);
   }
 
   scrollToTop() {
