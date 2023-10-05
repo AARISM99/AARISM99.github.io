@@ -5,6 +5,13 @@
   "projects": {
     "icentrum": {
       "projectType": "application",
+      "i18n": {
+        "sourceLocale": "nl",
+        "locales": {
+          "en": "src/locale/messages.en.xlf",
+          "ar": "src/locale/messages.ar.xlf"
+        }
+      },
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
@@ -17,6 +24,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": [
+              "en",
+              "ar",
+              "nl"
+            ],
             "outputPath": "dist/icentrum",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -34,7 +46,7 @@
           },
           "configurations": {
             "production": {
-              "localize": false,
+              "localize": true,
               "budgets": [
                 {
                   "type": "initial",
@@ -57,6 +69,16 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "en": {
+              "localize": ["en"],
+              "outputPath": "dist/under-construction-en/",
+              "i18nMissingTranslation": "error"
+            },
+            "ar": {
+              "localize": ["ar"],
+              "outputPath": "dist/under-construction-ar/",
+              "i18nMissingTranslation": "error"
             }
           },
           "defaultConfiguration": "production"
@@ -69,9 +91,21 @@
             },
             "development": {
               "browserTarget": "icentrum:build:development"
+            },
+            "en": {
+              "browserTarget": "icentrum:build:development,en"
+            },
+            "ar": {
+              "browserTarget": "icentrum:build:development,ar"
             }
           },
           "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "icentrum:build"
+          }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
