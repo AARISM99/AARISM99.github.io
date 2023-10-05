@@ -1,0 +1,32 @@
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-header row m-0">
+    <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11 p-0">{{'Menu' | translate}}</div>
+    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 p-0">
+      <a href="javascript:void(0)" (click)="closeSidebar()">
+        <i class="fa fa-close"></i>
+      </a>
+    </div>
+  </div>
+  <ul class="sidebar-menu" data-in="fadeInDown" data-out="fadeOutUp">
+    <li id="menu-item-44" class="w3-bar-item w3-button menu-item-44">
+      <a [routerLink]="['/home']" aria-current="page">{{'Welkom' | translate}}</a>
+    </li>
+    <li id="menu-item-43" class="w3-bar-item w3-button menu-item-43">
+      <a [routerLink]="['/inscription']">{{'Inschrijven lessen' | translate}}</a>
+    </li>
+    <li id="menu-item-42" class="w3-bar-item w3-button menu-item-42">
+      <a [routerLink]="['/agenda']">{{'Agenda' | translate}}</a>
+    </li>
+    <li id="menu-item-87" class="w3-bar-item w3-button menu-item-87">
+      <a [routerLink]="['/donation']">{{'Doneren' | translate}}</a>
+    </li>
+    <li id="menu-item-68" class="w3-bar-item w3-button menu-item-68">
+      <a [routerLink]="['/prayer-times']">{{'Gebedstijden' | translate}}</a>
+    </li>
+    <!-- <li id="menu-item-41" class="w3-bar-item w3-button menu-item-41"><a
+          href="moskee-bezoeken/index.html">Moskee Bezoeken</a></li> -->
+    <li id="menu-item-38" class="w3-bar-item w3-button menu-item-38">
+      <a [routerLink]="['/contact']">{{'Contact' | translate}}</a>
+    </li>
+  </ul>
+</div>

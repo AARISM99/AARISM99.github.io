@@ -1,0 +1,1213 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="nl" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="8364309938383915497" datatype="html">
+        <source>Home</source>
+        <target>الصفحة الرئيسية</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/breadcrumb/breadcrumb.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3371315904562136593" datatype="html">
+        <source>Over ons</source>
+        <target>تعرف علينا</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1675064368567538016" datatype="html">
+        <source>kvk: 01098755</source>
+        <target>الغرفة التجارية رقم 01098755</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2514248378011783398" datatype="html">
+        <source>Recent nieuws</source>
+        <target>آخر الأخبار</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3091089343313506276" datatype="html">
+        <source>WIE IS ALLAH?</source>
+        <target>من هو الله ؟ </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">29,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6846729042933254740" datatype="html">
+        <source>26 juli, 2023</source>
+        <target>26 يوليو 2023</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8642137786479695519" datatype="html">
+        <source>WAT IS ISLAM?</source>
+        <target>ما هو الإسلام؟ </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">42,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8841963822173338260" datatype="html">
+        <source>WONDEREN VAN DE KORAN</source>
+        <target>معجزات القرآن </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">55,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2997700322137350432" datatype="html">
+        <source>Contact met ons op</source>
+        <target>اتصل بنا</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2018425629740620732" datatype="html">
+        <source>Voornaam</source>
+        <target>الاسم الأول</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6010229064575293373" datatype="html">
+        <source>Achternaam</source>
+        <target>اسم العائلة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1956201792872193223" datatype="html">
+        <source>E-mailadres</source>
+        <target>البريد الالكتروني</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4030353278332240156" datatype="html">
+        <source>Verzenden</source>
+        <target>أرسل</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7929604835533977596" datatype="html">
+        <source>Copyright © 2023 Stichting Islamitsche gemeenschap Drachten - <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.gwmedia.nl/&quot; target=&quot;_blank&quot;&gt;"/>GW Media<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <target>حقوق النشر © 2023 مؤسسة المجتمع الإسلامي دراختن - <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.gwmedia.nl/&quot; target=&quot;_blank&quot;&gt;"/>GW Media<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/footer/footer.component.html</context>
+          <context context-type="linenumber">107,108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5315260556945304117" datatype="html">
+        <source>Startpagina logo</source>
+        <target>شعار الصفحة الرئيسية</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3601919246835690655" datatype="html">
+        <source>Welkom</source>
+        <target>مرحبا</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7539921087094748241" datatype="html">
+        <source>Inschrijven lessen</source>
+        <target>التسجيل للدروس</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/inscription/inscription.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1744447689214641829" datatype="html">
+        <source>Agenda</source>
+        <target>جدول أعمال</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/agenda/agenda.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6580367096649382439" datatype="html">
+        <source>Doneren</source>
+        <target>التبرع</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/donation/donation.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2508683985604490474" datatype="html">
+        <source>Gebedstijden</source>
+        <target>أوقات الصلوات</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7922989125096435449" datatype="html">
+        <source>Contact</source>
+        <target>اتصل بنا</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/navbar/navbar.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2102825898069375693" datatype="html">
+        <source>Menu</source>
+        <target>القائمة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/sidebar/sidebar.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2208511923417511758" datatype="html">
+        <source>Stichting Islamitsche gemeenschap Drachten</source>
+        <target>مؤسسة المجتمع الإسلامي دراختن</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7531878009186123552" datatype="html">
+        <source>Welkom op onze website</source>
+        <target>أهلا بكم في موقعنا</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1485096453808758257" datatype="html">
+        <source>Waar staan wij voor ?</source>
+        <target>ما الذي نقف من أجله ؟</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7781440365929095452" datatype="html">
+        <source>Hebt u verdere vragen neemt u contact met ons op via het contactformulier</source>
+        <target>إذا كان لديك أي أسئلة أخرى، يرجى الاتصال بنا عبر نموذج الاتصال </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">38,40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1331092223584537969" datatype="html">
+        <source>Langewyk 133, 9202 CN Drachten</source>
+        <target>لانجويك 133، 9202 سي إن دراختن</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">42,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4722852311547669286" datatype="html">
+        <source>kvk: 01098755</source>
+        <target>الغرفة التجارية رقم 01098755</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">51,53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3717929525117387541" datatype="html">
+        <source>Voornam</source>
+        <target>الاسم الأول</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7743894306380045182" datatype="html">
+        <source>Jouw voornaam..</source>
+        <target>اسمك الأول..</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1946361195013284645" datatype="html">
+        <source>Voornaam is verplicht</source>
+        <target>الإسم الأول مطلوب</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3498724934640654839" datatype="html">
+        <source>Jouw achternaam..</source>
+        <target>اسمك العائلي..</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5048678713581654149" datatype="html">
+        <source>Achternaam is verplicht</source>
+        <target>الاسم العائلي مطلوب</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2612558714828696394" datatype="html">
+        <source>Jouw e-mailadres ..</source>
+        <target>بريدك الالكتروني..</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7868398054349673077" datatype="html">
+        <source>E-mailadres is verplicht</source>
+        <target>البريد الالكتروني مطلوب</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5904062357982956190" datatype="html">
+        <source>Tel</source>
+        <target>رقم الهاتف</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7201381000669976460" datatype="html">
+        <source>Jouw tel ..</source>
+        <target>رقم هاتفك ..</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1121504596185386446" datatype="html">
+        <source>Tel is verplicht</source>
+        <target>رقم الهاتف مطلوب</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1062929830599253429" datatype="html">
+        <source>Onderwerp</source>
+        <target>الموضوع</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8228867917013015911" datatype="html">
+        <source>Vraag of opmerking ..</source>
+        <target>سؤال أو ملاحظة..</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7641506835648116488" datatype="html">
+        <source>Onderwerp is verplicht</source>
+        <target>الموضوع مطلوب</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1049010426063323359" datatype="html">
+        <source>Man</source>
+        <target>رجل </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">94,96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1460481418657853161" datatype="html">
+        <source>Vrouw</source>
+        <target>امرأة </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/contact/contact.component.html</context>
+          <context context-type="linenumber">100,102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4756469409180595313" datatype="html">
+        <source>AGENDA</source>
+        <target>جدول أعمال</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4585072767386603050" datatype="html">
+        <source>KALENDER</source>
+        <target>تقويم</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">238</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3526205892584451052" datatype="html">
+        <source>image</source>
+        <target>صورة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1643098978812467073" datatype="html">
+        <source>Introductie</source>
+        <target>مقدمة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3196848350929774060" datatype="html">
+        <source>Bismi llaahi Rrahmani Rrahiem,<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Alle lof zij Allah, de Heer der werelden, gebeden en vrede zij met Zijn edele dienaar en Boodschapper Mohammed, en met zijn metgezellen en degenen die hem volgen tot de Dag des oordeels.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> Assalamou 3alaikom wa rahmatoullahi wa barakaatouh,</source>
+        <target>باسم الله الرحمان الرحيم<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> الحمد لله رب العالمين، والصلاة والسلام على عبده ورسوله الكريم محمد، وعلى أصحابه ومن تبعه إلى يوم الدين.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> و السلام عليكم و رحمة الله و بركاته.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">46,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2726850520030744959" datatype="html">
+        <source>Welkom op de website van moskee en islamitische stichting Drachten : Icentrum. Op deze site willen wij onze leden en andere bezoekers informeren over de gang van zaken wat betreft Icentrum.</source>
+        <target>مرحبا بكم في الموقع الإلكتروني للمسجد والمؤسسة الإسلامية دراختن: مركز عبد العزيز ابن باز، نريد في هذا الموقع إبلاغ أعضائنا والزوار الآخرين بالحالة المتعلقة بـالموقع</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">50,51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2711645933120297177" datatype="html">
+        <source>Contact opnemen</source>
+        <target>اتصل بنا</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8812206514814030841" datatype="html">
+        <source>Nu doneren</source>
+        <target>تبرع الآن</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3840632708726280980" datatype="html">
+        <source>Via deze link kunt u direct doneren.</source>
+        <target>يمكنكم التبرع مباشرة عبر هذا الرابط. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">70,72</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5969000181749181422" datatype="html">
+        <source>Recent nieuws</source>
+        <target>آخر الأخبار</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2959262456038424854" datatype="html">
+        <source>Het nieuws van Islamitisch Centrum Drachten</source>
+        <target>هي أخبار المركز الإسلامي دراختن</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1829068527545033378" datatype="html">
+        <source>who_is_allah.jpg</source>
+        <target>who_is_allah.jpg</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7055411830787993422" datatype="html">
+        <source>WIE IS ALLAH?</source>
+        <target>من هو الله؟</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">108</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5932909642064017079" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;icon-comment&quot; aria-hidden=&quot;true&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>26 juli, 2023</source>
+        <target><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;icon-comment&quot; aria-hidden=&quot;true&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>26 july, 2023</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">138</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">164</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6412740186311408679" datatype="html">
+        <source>Enkele van de grootste misvattingen die veel niet-moslims hebben over de islam hebben te maken met het woord &quot;ALLAH&quot;.</source>
+        <target>بعض من أكبر المفاهيم الخاطئة لدى العديد من غير المسلمين عن الإسلام تتعلق بكلمة "الله". </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">115,117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="379608568982972226" datatype="html">
+        <source>Meer lezen</source>
+        <target>اقرأ أكثر</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">146</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">172</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1932242130193402439" datatype="html">
+        <source>what_is_islam.jpg</source>
+        <target>what_is_islam.jpg</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">129</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4033916966131233032" datatype="html">
+        <source>WAT IS ISLAM?</source>
+        <target>ما هو الاسلام؟</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3172679164434032426" datatype="html">
+        <source>Het woord &quot;islam&quot; is een Arabisch woord dat betekent het onderwerpen en overgeven van je wil aan de Almachtige God. De religie van de islam is de acceptatie van en gehoorzaamheid aan de leringen van God, die Hij aan zijn laatste profeet Mohammed (vzmh) heeft geopenbaard.</source>
+        <target>كلمة &quot;الإسلام&quot; هي كلمة عربية تعني الخضوع وتسليم الإرادة لله تعالى. دين الإسلام هو القبول والطاعة لتعاليم الله التي أنزلها على نبيه الأخير محمد (صلى الله عليه وسلم). </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">141,143</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="137053172370982478" datatype="html">
+        <source>miracles_of_quran.jpg</source>
+        <target>miracles_of_quran.jpg</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">155</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7085211598021726670" datatype="html">
+        <source>WONDEREN VAN DE KORAN</source>
+        <target>معجزات القرآن</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">160</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4693949869487354797" datatype="html">
+        <source>Veertien eeuwen geleden zond God de Koran naar de mensheid als een boek van leiding. Hij riep mensen op zich naar de waarheid te laten leiden door zich aan dit boek te houden. Vanaf de dag van zijn openbaring tot de dag des oordeels zal dit laatste goddelijke boek de enige gids voor de mensheid blijven.</source>
+        <target>قبل أربعة عشر قرنا، أنزل الله القرآن للبشرية كتاب هدى. ودعا الناس إلى الهداية إلى الحق بالتمسك بهذا الكتاب. ومن يوم نزوله إلى يوم القيامة، سيبقى هذا الكتاب الإلهي الأخير المرشد الوحيد للبشرية. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/home/home.component.html</context>
+          <context context-type="linenumber">167,169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4730270343575362478" datatype="html">
+        <source>Gebedstijden in <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;ml-2 text-secondary&quot;&gt;"/> (<x id="INTERPOLATION" equiv-text="{{localisation}}"/> <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fa fa-map-marker mr-2&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>) <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target>أوقات الصلوات في <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;ml-2 text-secondary&quot;&gt;"/> (<x id="INTERPOLATION" equiv-text="{{localisation}}"/> <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fa fa-map-marker mr-2&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/>) <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">8,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1486190658219061225" datatype="html">
+        <source>Aankomend gebed</source>
+        <target>الصلاة القادمة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7051989370232701080" datatype="html">
+        <source>Islamitische Wereldliga &nbsp;</source>
+        <target>رابطة العالم الإسلامي &nbsp;</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8980293534421853822" datatype="html">
+        <source>Fajr&nbsp;18.graden,&nbsp;Isha&nbsp;17.0&nbsp;graden,&nbsp;Hanbali, Maliki, Shafi &nbsp;<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;glyphter icon-info cal-method-info&quot; data-toggle=&quot;modal&quot;
+                data-target=&quot;#cal-method-info&quot;&gt;"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target>الفجر&nbsp;18.درجة,&nbsp;العشاء&nbsp;17.0&nbsp;درجة,&nbsp;حنبلي, المالكي, الشافعي &nbsp;<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;glyphter icon-info cal-method-info&quot; data-toggle=&quot;modal&quot;
+                data-target=&quot;#cal-method-info&quot;&gt;"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">51,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6134108954721136756" datatype="html">
+        <source>Gebedstijden kalender</source>
+        <target>تقويم أوقات الصلاة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2094429096032891184" datatype="html">
+        <source>Maand</source>
+        <target>الشهر</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8430283230080689174" datatype="html">
+        <source>Januari</source>
+        <target>يناير</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3452253240520842812" datatype="html">
+        <source>Februari</source>
+        <target>فبراير</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="216340045820459578" datatype="html">
+        <source>Maart</source>
+        <target>مارس</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1809521303476565743" datatype="html">
+        <source>April</source>
+        <target>أبريل</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8311844014963657785" datatype="html">
+        <source>Mei</source>
+        <target>ماي</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5829316612883860294" datatype="html">
+        <source>Juni</source>
+        <target>يونيو</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1899381576479788257" datatype="html">
+        <source>Juli</source>
+        <target>يوليوز</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="966663058267536011" datatype="html">
+        <source>Augustus</source>
+        <target>غشت</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5872622085239011307" datatype="html">
+        <source>September</source>
+        <target>شتنبر</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1280165460303116228" datatype="html">
+        <source>Oktober</source>
+        <target>أكتوبر</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1109977718843277527" datatype="html">
+        <source>November</source>
+        <target>نوفمبر</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="124191049522509365" datatype="html">
+        <source>December</source>
+        <target>دجنبر</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8721248221705405329" datatype="html">
+        <source>Jaarlijkse</source>
+        <target>سنوي</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1429089481889062776" datatype="html">
+        <source>Jaar</source>
+        <target>السنة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3715661304834080243" datatype="html">
+        <source>Ligging</source>
+        <target>الموقع</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5978311556768798897" datatype="html">
+        <source>Methode</source>
+        <target>الطريقة </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">112,114</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4416621242641596927" datatype="html">
+        <source>Shia Ithna-Ashari</source>
+        <target>شيعة الاثنا عشرية</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5864691914330560440" datatype="html">
+        <source>Universiteit voor Islamitische Wetenschappen, Karachi</source>
+        <target>جامعة العلوم الإسلامية، كراتشي</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">118</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6952403251083802911" datatype="html">
+        <source>Islamitische Vereniging van Noord-Amerika (ISNA)</source>
+        <target>الرابطة الإسلامية لأمريكا الشمالية (ISNA)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3123726185117213235" datatype="html">
+        <source>Moslim Wereldliga (MWL)</source>
+        <target>رابطة العالم الإسلامي (ر.ع.ا)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5244493401040641475" datatype="html">
+        <source>Umm al-Qura, Mekka</source>
+        <target>أم القرى، مكة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4275258078150979952" datatype="html">
+        <source>Egyptische Algemene Onderzoeksautoriteit</source>
+        <target>الهيئة العامة للمباحث المصرية</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">122</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4433700399759836365" datatype="html">
+        <source>Instituut voor Geofysica, Universiteit van Teheran</source>
+        <target>معهد الجيوفيزياء، جامعة طهران</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5723686933881203034" datatype="html">
+        <source>Golf regio</source>
+        <target>منطقة الجولف</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">124</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8588721854475059630" datatype="html">
+        <source>Koeweit</source>
+        <target>الكويت</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">125</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8809587943251704470" datatype="html">
+        <source>Katar</source>
+        <target>قطر</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">126</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="939108251865528618" datatype="html">
+        <source>Majlis Ugama Islam Singapura, Singapore</source>
+        <target>مجلس أوغاما الإسلام، سنغافورة، سنغافورة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">127</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4218806713048427116" datatype="html">
+        <source>Unieorganisatie Islamitisch de France</source>
+        <target>منظمة الاتحاد الإسلامي الفرنسي</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">128</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2097603636700547446" datatype="html">
+        <source>Diyanet İşleri Başkanlığı, Turkije</source>
+        <target>ديانت إشليري باشكانليغي، تركيا</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">129</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5600842975535129372" datatype="html">
+        <source>Spiritueel bestuur van moslims in Rusland</source>
+        <target>الحكم الروحي للمسلمين في روسيا</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6440576539928419553" datatype="html">
+        <source>Maanwaarneming Comité</source>
+        <target>لجنة مراقبة القمر</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">131</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4291402545868949029" datatype="html">
+        <source>Dubai, Verenigde Arabische Emiraten</source>
+        <target>دبى، الامارات العربية المتحدة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4754210258033562650" datatype="html">
+        <source>Aangepaste</source>
+        <target>اختياري</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">133</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2566606025243553563" datatype="html">
+        <source>Aangepaste instellingen</source>
+        <target>إعدادات خاصة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">141</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4218434059458070046" datatype="html">
+        <source>Fajr Hoek</source>
+        <target>زاوية الفجر</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">143</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4195577203880885089" datatype="html">
+        <source>Maghrib Hoek of minuten na zonsondergang (Bijvoorbeeld: 16.5 of 10 minuten)</source>
+        <target>زاوية المغرب أو بعد غروب الشمس بدقائق (مثلا: 16.5 أو 10 دقائق)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">147</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2124698238795992001" datatype="html">
+        <source>Isha Hoek of minuten na Maghrib (Bijvoorbeeld: 19 f 90 minuten)</source>
+        <target>زاوية العشاء أو دقائق بعد المغرب (مثال: 19 ف 90 دقيقة)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">151</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="790816414380107473" datatype="html">
+        <source>Juridische School (heeft alleen invloed op de Asr-berekening)</source>
+        <target>المدرسة القانونية (تؤثر فقط على حساب العصر)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">160</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5595104565618318468" datatype="html">
+        <source>Shafi, Hanbali, Maliki, Shia en alle anderen</source>
+        <target>الشافعي والحنبلي والمالكي والشيعة وغيرهم</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">162</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4312337776100344562" datatype="html">
+        <source>Hanafi</source>
+        <target>الحنفي</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">163</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5711582097391362438" datatype="html">
+        <source>Toepassingsmethode voor hogere breedtegraad</source>
+        <target>طريقة التطبيق لخطوط العرض العليا</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8866165035693745049" datatype="html">
+        <source>Midden in de nacht-methode</source>
+        <target>طريقة منتصف الليل</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">171</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="304468598050848001" datatype="html">
+        <source>Eén zevende regel</source>
+        <target>سطر سابع واحد</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">172</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="629661363767064664" datatype="html">
+        <source>Op hoek gebaseerde methode</source>
+        <target>الطريقة القائمة على الزاوية</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">173</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="977634535258600720" datatype="html">
+        <source>Middernacht Berekeningsmodus</source>
+        <target>وضع حساب منتصف الليل</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">179</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4316787888970199304" datatype="html">
+        <source>Standaard (midden zonsondergang tot zonsopgang)</source>
+        <target>معيار (منتصف غروب الشمس إلى شروق الشمس)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">181</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1244982018529747362" datatype="html">
+        <source>Jafari (midden zonsondergang tot Fajr)</source>
+        <target>الجعفري (منتصف غروب الشمس إلى الفجر)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">182</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5901922774974339653" datatype="html">
+        <source>Gebedstijden afstemmen (in minuten)</source>
+        <target>تنسيق أوقات الصلاة (بالدقائق)</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">190</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1646471360576135339" datatype="html">
+        <source>Imask</source>
+        <target>الامساك</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">193</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="972114719341191317" datatype="html">
+        <source>Fajr</source>
+        <target>الفجر</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">197</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">243</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6219108669352917257" datatype="html">
+        <source>Zonsopkomst</source>
+        <target>الشروق</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">201</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1507335266842217765" datatype="html">
+        <source>Dhuhr</source>
+        <target>الظهر</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">205</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">245</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5495335407538754274" datatype="html">
+        <source>Asr</source>
+        <target>العصر</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">209</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">246</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7406087429344914268" datatype="html">
+        <source>Zonsondergang</source>
+        <target>الغروب</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">213</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4931859791363105867" datatype="html">
+        <source>Maghreb</source>
+        <target>المغرب</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">217</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2860308400953890005" datatype="html">
+        <source>Isha</source>
+        <target>العشاء</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">221</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">248</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8398645597087947686" datatype="html">
+        <source>Middernacht</source>
+        <target>منتصف الليل</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">225</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2455941966776792691" datatype="html">
+        <source>Kalender genereren</source>
+        <target>إنشاء التقويم</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">233</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7225188300874994693" datatype="html">
+        <source>Zonsopkomst</source>
+        <target>الشروق</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">244</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="272471989081681626" datatype="html">
+        <source>Maghreb</source>
+        <target>المغرب</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pages/prayer-times/prayer-times.component.html</context>
+          <context context-type="linenumber">247</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3723178685141750831" datatype="html">
+        <source>Programma</source>
+        <target>البرنامج</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/agenda-calendar/agenda-calendar.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="310846313321840833" datatype="html">
+        <source>Activiteiten</source>
+        <target>الأنشطة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/agenda-calendar/agenda-calendar.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8625534791139919594" datatype="html">
+        <source>Meer <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fa fa-arrow-right ml-1&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
+        <target>أكثر <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i class=&quot;fa fa-arrow-right ml-1&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/agenda-calendar/agenda-calendar.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1237545352696867591" datatype="html">
+        <source>Gebed</source>
+        <target>الصلاة</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/prayer-time-calendar/prayer-time-calendar.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8146430883590164420" datatype="html">
+        <source>Azan-timing</source>
+        <target>توقيت الآذان</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/prayer-time-calendar/prayer-time-calendar.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1279099203770441326" datatype="html">
+        <source>Resterende tijd</source>
+        <target>الوقت المتبقي</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/widgets/prayer-time-calendar/prayer-time-calendar.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

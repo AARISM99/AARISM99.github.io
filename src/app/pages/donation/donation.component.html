@@ -1,0 +1,47 @@
+<div class="banner" [ngStyle]="{'background-image': 'url(assets/images/IMG_7823.jpg)'}" style="background-size: cover; background-position: center center; background-repeat: no-repeat; opacity: 1;">
+  <div class="shadow-main">
+    <h1 class="title">{{'Doneren' | translate}}</h1>
+    <app-breadcrumb [routes]="[title[constants._lang]]"></app-breadcrumb>
+    <div class="item-content">
+      <div class="gb-middle">
+        <div class="slider-content donation p-4">
+          <div class="description p-4">
+            <h5 class="title default-underline">
+              <span class="img-donate"></span>
+              {{'DOE EEN DONATIE' | translate}}
+              <img class="ml-2 mr-2" src="/assets/images/donation-heart-svgrepo-com.svg">
+            </h5>
+            <p>{{description[constants._lang]}}</p>
+            <!-- <div class="buttons">
+              <a class="btn btn-donate"></a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="donation-section">
+  <div class="container">
+    <div class="row d-flex">
+      <div class="col-lg-4 p0">
+        <div class="block-image">
+          <div class="image">
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8 p0">
+        <div class="block-content">
+          <h2 class="block-title title default-underline">{{donationExample.title[constants._lang]}}</h2>
+          <div class="block-body">
+            {{donationExample.description[constants._lang]}}
+          </div>
+          <div class="block-button mt-3">
+            <button class="btn btn-secondary">Steunen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

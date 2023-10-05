@@ -1,0 +1,41 @@
+<div class="widget">
+  <div class="duaLocation d-flex flex-direction-colmn">
+    <h3 class="address" *ngIf="locationAddress != undefined">
+      <i class="fa fa-map-marker ml-2 mr-2"></i>
+      {{extractTextByLanguage(getSettelementHierarchy(locationAddress))}}
+      {{constants._lang == "ar" ? "،" : ","}}&nbsp;
+      {{extractTextByLanguage(locationAddress!.country)}}
+    </h3>
+    <div class="pt-date font-dark font-sm">
+      <p *ngIf="dateGregorian != undefined">{{dateGregorian!.weekday!.en + ' ' + dateGregorian!.month!.en + ' ' + dateGregorian!.day + ', ' + dateGregorian!.year}}</p>
+      <p *ngIf="dateHijri != undefined" class="font-weight-bold">{{dateHijri!.weekday![constants._lang == 'ar' ? constants._lang : 'en'] + ' ' + dateHijri!.day + ' ' + dateHijri!.month![constants._lang == 'ar' ? constants._lang : 'en'] + ', ' + dateHijri!.year}}</p>
+    </div>
+  </div>
+  <div class="nawazSalah">
+    <div class="card">
+      <div class="cardHeader">
+        <div class="col-4">{{'Gebed' | translate}}</div>
+        <div class="col-4">{{'Azan-timing' | translate}}</div>
+        <div class="col-4 ">{{'Resterende tijd' | translate}}</div>
+      </div>
+      <div class="cardBody">
+        <!-- <div class="nawazList {{upcomingPrayerTime.prayer == prayerTime.prayer ? prayerTime.prayer + '-tile' : ''}}" *ngFor="let prayerTime of prayerTimesWithRestTimes"> -->
+          <div class="nawazList" *ngFor="let prayerTime of prayerTimesWithRestTimes" [ngClass]="{upcomingAzan: upcomingPrayerTime.prayer == prayerTime.prayer}">
+          <div class="col-4">
+            <div class="nawazName">
+              <img src="https://www.prayertimes.org/wp-content/themes/prayer/assets/images/icon/{{prayerTime.prayer | lowercase}}.svg" alt="{{prayerTime.prayer}}.svg">
+              {{prayerTime.title![constants._lang]}}
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="nawazTime">{{prayerTime.time | time24to12Transform}}</div>
+          </div>
+          <div class="col-4">
+            <div *ngIf="getRestTime(prayerTime.prayer)" class="leftTime">&nbsp;{{getRestTime(prayerTime.prayer).h}}&nbsp;{{'uur' | translate}}&nbsp;{{getRestTime(prayerTime.prayer).m}}&nbsp;{{'min' | translate}}&nbsp;</div>
+            <div *ngIf="!getRestTime(prayerTime.prayer)" class="leftTime">{{'Niets' | translate}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

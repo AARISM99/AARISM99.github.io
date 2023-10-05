@@ -1,0 +1,271 @@
+<div class="banner" style="background-image: url('assets/images/IMG_7823.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; opacity: 1;">
+  <div class="shadow-main">
+    <h1 class="title">{{'Gebedstijden' | translate}}</h1>
+    <app-breadcrumb [routes]="[title[constants._lang]]"></app-breadcrumb>
+    <div class="boxCard boxCard-lg" id="prayertimes-card">
+      <div class="pt-card-header">
+        <div class="d-flex flex-column pt-address">
+          <span class="boxCard-title mb-1">
+            {{'Gebedstijden' | translate}} {{'in' | translate}}
+            <span class="ml-2 text-secondary" *ngIf="locationAddress != undefined">
+              ({{extractTextByLanguage(getSettelementHierarchy(locationAddress))}}
+              {{constants._lang == "ar" ? "،" : ","}}&nbsp;
+              {{extractTextByLanguage(locationAddress!.country)}}
+              <i class="fa fa-map-marker ml-2 mr-2"></i>)
+            </span>
+          </span>
+          <!-- <a href="/world/" class="font-primary font-sm change-loc gtm-pt-chloc">Wrong Location?</a> -->
+        </div>
+        <div class="pt-date font-dark font-sm">
+          <!-- <p>22&nbsp;August,&nbsp;2023</p> -->
+          <p *ngIf="dateGregorian != undefined">{{dateGregorian!.weekday!.en + ' ' + dateGregorian!.month!.en + ' ' + dateGregorian!.day + ', ' + dateGregorian!.year}}</p>
+          <p *ngIf="dateHijri != undefined" class="font-weight-bold">{{dateHijri!.weekday![constants._lang == 'ar' ? constants._lang : 'en'] + ' ' + dateHijri!.day + ' ' + dateHijri!.month![constants._lang == 'ar' ? constants._lang : 'en'] + ', ' + dateHijri!.year}}</p>
+          <!-- <p class="font-weight-bold pt-date-right">5&nbsp;Safar,&nbsp;1445</p> -->
+        </div>
+      </div>
+      <div class="pt-card-tiles slick-initialized slick-slider" dir="">
+        <div class="slick-list">
+          <div class="slick-track">
+            <div *ngFor="let prayerTime of prayerTimesWithRestTimes" class="prayerTiles {{prayerTime.prayer}}-tile slick-slide slick-current slick-active" [ngClass]="{'pt-active': upcomingPrayerTime.prayer == prayerTime.prayer}" data-slick-index="0"
+              aria-hidden="false" tabindex="0">
+              <p *ngIf="upcomingPrayerTime.prayer == prayerTime.prayer">
+                <span class="upcoming-text">{{'Aankomend gebed' | translate}}</span>
+                <span class="prayername">{{prayerTime.title![constants._lang]}}</span>
+                <span class="pt-timer" id="clockdiv">{{getRestTime(prayerTime.prayer) ? ((getRestTime(prayerTime.prayer).h | addZeroIfNbrLtTenTransform) + ':' + (getRestTime(prayerTime.prayer).m | addZeroIfNbrLtTenTransform) + ':' + (getRestTime(prayerTime.prayer).s | addZeroIfNbrLtTenTransform)) : ''}}</span>
+                <span class="prayertime">{{prayerTime.time | time24to12Transform}}</span>
+              </p>
+              <p *ngIf="upcomingPrayerTime.prayer != prayerTime.prayer">
+                <span class="prayername">{{prayerTime.title![constants._lang]}}</span>
+                <span class="prayertime">{{prayerTime.time | time24to12Transform}}</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ptcard-footer">
+        <div class="d-flex pt-more">
+          <div class="pt-info">
+            <p class="font-sm font-dark">{{'Islamitische Wereldliga' | translate}} &nbsp;
+              <!-- <a class="font-primary font-sm font-weight-bold underline-hover settingsOpener gtm-pt-settings"
+                title="Click here to change settings">
+                Change
+              </a>  -->
+            </p>
+            <p class="font-xs font-muted">{{'Fajr' | translate}}&nbsp;18.0&nbsp;{{'graden' | translate}},&nbsp;{{'Isha' | translate}}&nbsp;17.0&nbsp;{{'graden' | translate}},&nbsp;{{'Hanbali, Maliki, Shafi' | translate}}
+              &nbsp;<span class="glyphter icon-info cal-method-info" data-toggle="modal"
+                data-target="#cal-method-info"></span>
+            </p>
+          </div>
+        </div>
+        <!-- <a href="/widgets/#prayertimeswidget"
+          class="font-primary font-sm align-self-end font-weight-bold underline-hover gtm-pt-embed"
+          title="Embed Prayer times on your website or blog">Embed to your website</a> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="main-container">
+  <div class="container">
+    <h1 class="title default-underline">{{'Gebedstijden kalender' | translate}}</h1>
+    <div class="calendarConfigForm">
+      <form role="form" [formGroup]="calendarConfigForm" (ngSubmit)="generateCalendar()">
+        <div class="row m-0">
+
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="month">{{'Maand' | translate}}</label>
+                    <select id="month" name="month" formControlName="month" class="form-control">
+                      <option value="1" name="January">{{'Januari' | translate}}</option>
+                      <option value="2" name="February">{{'Februari' | translate}}</option>
+                      <option value="3" name="March">{{'Maart' | translate}}</option>
+                      <option value="4" name="April">{{'April' | translate}}</option>
+                      <option value="5" name="May">{{'Mei' | translate}}</option>
+                      <option value="6" name="June">{{'Juni' | translate}}</option>
+                      <option value="7" name="July">{{'Juli' | translate}}</option>
+                      <option value="8" name="August">{{'Augustus' | translate}}</option>
+                      <option value="9" name="September">{{'September' | translate}}</option>
+                      <option value="10" name="October">{{'Oktober' | translate}}</option>
+                      <option value="11" name="November">{{'November' | translate}}</option>
+                      <option value="12" name="December">{{'December' | translate}}</option>
+                      <option value="annual">{{'Jaarlijkse' | translate}}</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="year">{{'Jaar' | translate}}</label>
+                    <input type="number" id="year" name="year" formControlName="year" step="1" min="1900" max="2099" class="form-control" value="2023">
+                </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                  <label for="location">{{'Ligging' | translate}}</label>
+                  <input class="form-control" name="address" formControlName="address" id="address" value="" placeholder="Example: Drachten, NL">
+              </div>
+            </div>
+        </div>
+
+        <div class="row m-0">
+          <div class="col-md-6 mb-4">
+            <div class="form-group">
+              <label for="method">
+                {{'Methode' | translate}}
+                <!-- (<a href="/calculation-methods" target="_blank">Learn more about calculation methods</a>) -->
+              </label>
+              <select id="method" name="method" formControlName="method" class="form-control">
+                <option value="0">{{'Shia Ithna-Ashari' | translate}}</option>
+                <option value="1">{{'Universiteit voor Islamitische Wetenschappen, Karachi' | translate}}</option>
+                <option value="2">{{'Islamitische Vereniging van Noord-Amerika (ISNA)' | translate}}</option>
+                <option value="3" selected="">{{'Moslim Wereldliga (MWL)' | translate}}</option>
+                <option value="4">{{'Umm al-Qura, Mekka' | translate}}</option>
+                <option value="5">{{'Egyptische Algemene Onderzoeksautoriteit' | translate}}</option>
+                <option value="7">{{'Instituut voor Geofysica, Universiteit van Teheran' | translate}}</option>
+                <option value="8">{{'Golf regio' | translate}}</option>
+                <option value="9">{{'Koeweit' | translate}}</option>
+                <option value="10">{{'Katar' | translate}}</option>
+                <option value="11">{{'Majlis Ugama Islam Singapura, Singapore' | translate}}</option>
+                <option value="12">{{'Unieorganisatie Islamitisch de France' | translate}}</option>
+                <option value="13">{{'Diyanet İşleri Başkanlığı, Turkije' | translate}}</option>
+                <option value="14">{{'Spiritueel bestuur van moslims in Rusland' | translate}}</option>
+                <option value="15">{{'Maanwaarneming Comité' | translate}}</option>
+                <option value="16">{{'Dubai, Verenigde Arabische Emiraten' | translate}}</option>
+                <option value="99">{{'Aangepaste' | translate}}</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row m-0 customSettingsForm" *ngIf="f['method'].value == 99 || f['method'].value == '99'">
+          <div class="form-group pl-4 pr-4">
+            <h4 class="title mt-4 mb-3">{{'Aangepaste instellingen' | translate}}</h4>
+            <div class="col-md-6 pl-0">
+                <label for="customFajrAngle">{{'Fajr Hoek' | translate}}</label>
+                <input class="form-control" name="customFajrAngle" formControlName="customFajrAngle" id="customFajrAngle" value="18">
+            </div>
+            <div class="col-md-6 pl-0">
+                <label for="customMaghribAngle">{{'Maghrib Hoek of minuten na zonsondergang (Bijvoorbeeld: 16.5 of 10 minuten)' | translate}}</label>
+                <input class="form-control" name="customMaghribAngle" formControlName="customMaghribAngle" id="customMaghribAngle" value="4.5">
+            </div>
+            <div class="col-md-6 pl-0">
+                <label for="customIshaAngle">{{'Isha Hoek of minuten na Maghrib (Bijvoorbeeld: 19 f 90 minuten)' | translate}}</label>
+                <input class="form-control" name="customIshaAngle" formControlName="customIshaAngle" id="customIshaAngle" value="90 min">
+            </div>
+          </div>
+        </div>
+
+        <div class="row m-0">
+          <div class="col-md-6 mb-4">
+            <div class="form-group">
+              <label for="juristicSchool">{{'Juridische School (heeft alleen invloed op de Asr-berekening)' | translate}}</label>
+              <select class="form-control" name="juristicSchool" formControlName="juristicSchool" id="juristicSchool">
+                <option value="0" selected="selected">{{'Shafi, Hanbali, Maliki, Shia en alle anderen' | translate}}</option>
+                <option value="1">{{'Hanafi' | translate}}</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="form-group">
+              <label for="latidudeAdjustment">{{'Toepassingsmethode voor hogere breedtegraad' | translate}}</label>
+              <select class="form-control" name="latitudeAdjustment" formControlName="latitudeAdjustment" id="latitudeAdjustment">
+                <option value="1">{{'Midden in de nacht-methode' | translate}}</option>
+                <option value="2">{{'Eén zevende regel' | translate}}</option>
+                <option value="3" selected="selected">{{'Op hoek gebaseerde methode' | translate}}</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="form-group">
+              <label for="midnightMode">{{'Middernacht Berekeningsmodus' | translate}}</label>
+              <select class="form-control" name="midnightMode" formControlName="midnightMode" id="midnightMode">
+                <option value="0" selected="selected">{{'Standaard (midden zonsondergang tot zonsopgang)' | translate}}</option>
+                <option value="1">{{'Jafari (midden zonsondergang tot Fajr)' | translate}}</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="row m-0">
+          <div class="form-group pl-4 pr-4">
+            <h4 class="title mt-4 mb-3">{{'Gebedstijden afstemmen (in minuten)' | translate}}</h4>
+            <div class="tunes mt-3">
+              <div class="tune">
+                  <label for="tuneImsak">{{'Imask' | translate}}</label>
+                  <input type="number" min="0" class="form-control" name="tuneImsak" formControlName="tuneImsak" id="tuneImsak" value="0">
+              </div>
+              <div class="tune">
+                  <label for="tuneFajr">{{'Fajr' | translate}}</label>
+                  <input type="number" min="0" class="form-control" name="tuneFajr" formControlName="tuneFajr" id="tuneFajr" value="0">
+              </div>
+              <div class="tune">
+                  <label for="tuneSunrise">{{'Zonsopkomst' | translate}}</label>
+                  <input type="number" min="0" class="form-control" name="tuneSunrise" formControlName="tuneSunrise" id="tuneSunrise" value="0">
+              </div>
+              <div class="tune">
+                  <label for="tuneZhuhr">{{'Dhuhr' | translate}}</label>
+                  <input type="number" min="0" class="form-control" name="tuneZhuhr" formControlName="tuneZhuhr" id="tuneZhuhr" value="0">
+              </div>
+              <div class="tune">
+                  <label for="tuneAsr">{{'Asr' | translate}}</label>
+                  <input type="number" min="0" class="form-control" name="tuneAsr" formControlName="tuneAsr" id="tuneAsr" value="0">
+              </div>
+              <div class="tune">
+                  <label for="tuneSunset">{{'Zonsondergang' | translate}}</label>
+                  <input type="number" min="0" class="form-control" name="tuneSunset" formControlName="tuneSunset" id="tuneSunset" value="0">
+              </div>
+              <div class="tune">
+                  <label for="tuneMaghrib">{{'Maghreb' | translate}}</label>
+                  <input type="number" min="0" class="form-control" name="tuneMaghrib" formControlName="tuneMaghrib" id="tuneMaghrib" value="0">
+              </div>
+              <div class="tune">
+                  <label for="tuneIsha">{{'Isha' | translate}}</label>
+                  <input type="number" min="0" class="form-control" name="tuneIsha" formControlName="tuneIsha" id="tuneIsha" value="0">
+              </div>
+              <div class="tune">
+                  <label for="tuneMidnight">{{'Middernacht' | translate}}</label>
+                  <input type="number" min="0" class="form-control" name="tuneMidnight" formControlName="tuneMidnight" id="tuneMidnight" value="0">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button type="submit" id="generateCalendar" class="btn btn-default p-4 mt-4">{{'Kalender genereren' | translate}}</button>
+        </div>
+
+      </form>
+    </div>
+    <h1 class="title default-underline">{{'Gegenereerde kalender' | translate}}</h1>
+    <div class="calendarResult">
+      <table class="table prayerTimes">
+        <thead>
+          <tr>
+            <th i18n>{{'Fajr' | translate}}</th>
+            <th i18n>{{'Zonsopkomst' | translate}}</th>
+            <th i18n>{{'Dhuhr' | translate}}</th>
+            <th i18n>{{'Asr' | translate}}</th>
+            <th i18n>{{'Maghreb' | translate}}</th>
+            <th i18n>{{'Isha' | translate}}</th>
+          </tr>
+        </thead>
+        <tbody *ngIf="calendar.length > 0">
+          <tr *ngFor="let calendarItem of calendar">
+            <td>{{calendarItem.timings.Fajr.split(' ')[0] | time24to12Transform}}</td>
+            <td>{{calendarItem.timings.Sunrise.split(' ')[0] | time24to12Transform}}</td>
+            <td>{{calendarItem.timings.Dhuhr.split(' ')[0] | time24to12Transform}}</td>
+            <td>{{calendarItem.timings.Asr.split(' ')[0] | time24to12Transform}}</td>
+            <td>{{calendarItem.timings.Maghrib.split(' ')[0] | time24to12Transform}}</td>
+            <td>{{calendarItem.timings.Isha.split(' ')[0] | time24to12Transform}}</td>
+          </tr>
+        </tbody>
+        <tbody *ngIf="calendar.length <= 0">
+          <div class="empty_content p-3">
+            No calendar found.
+          </div>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

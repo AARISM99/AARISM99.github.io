@@ -1,0 +1,73 @@
+<div id="header">
+  <div class="menuBar" style="background: transparent;">
+    <nav class="navbar navbar-default">
+      <div class="lang-toggle collapsed" data-toggle="collapse" data-target="#lang-menu">
+        <i class="fa fa-globe ml-1 mr-1"></i>
+        <select class="lang-list" name="lang" [(ngModel)]="constants._lang" (change)="setTransLanguage($event)">
+          <option class="lang-item" *ngFor="let tlang of transLangs" [value]="tlang">{{tlang | translate}}</option>
+        </select>
+        <!-- <select class="lang-list" [(ngModel)]="lang" (change)="changeLanguage()">
+          <option value="nl" class="lang-item">Nederl</option>
+          <option value="en" class="lang-item">English</option>
+          <option value="ar" class="lang-item">العربية</option>
+        </select> -->
+      </div>
+      <button (click)="openSidebar()" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+      <div class="container navbar-container p0">
+        <div class="navbar-header col-lg-3 pl-4 pr-4">
+          <div class="logo">
+            <a [routerLink]="['/home']" class="navbar-brand">
+              <img src="assets/images/logo_wit.png" [alt]="'Startpagina logo' | translate" i18n-alt>
+            </a>
+          </div>
+        </div>
+        <div class="navbar-right col-lg-9 pl-3 pr-4">
+          <div id="navbar-menu" class="collapse navbar-collapse p0">
+            <ul class="nav navbar-nav navbar-list" data-in="fadeInDown" data-out="fadeOutUp">
+              <li id="menu-item-1" class="menu-item menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-1">
+                <a [routerLink]="['/home']" aria-current="page">{{'Welkom' | translate}}</a>
+              </li>
+              <li id="menu-item-2" class="menu-item menu-item-2">
+                <a [routerLink]="['/inscription']">{{'Inschrijven lessen' | translate}}</a>
+              </li>
+              <li id="menu-item-3" class="menu-item menu-item-3">
+                <a [routerLink]="['/agenda']">{{'Agenda' | translate}}</a></li>
+              <li id="menu-item-4" class="menu-item menu-item-4">
+                <a [routerLink]="['/donation']">{{'Doneren' | translate}}</a>
+              </li>
+              <li id="menu-item-5" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5">
+                <a [routerLink]="['/prayer-times']">{{'Gebedstijden' | translate}}</a>
+              </li>
+              <!-- <li id="menu-item-41" class="menu-item menu-item-41"><a
+                  href="moskee-bezoeken/index.html">Moskee Bezoeken</a></li> -->
+              <li id="menu-item-6" class="menu-item menu-item-6">
+                <a [routerLink]="['/contact']">{{'Contact' | translate}}</a>
+              </li>
+              <li id="menu-item-7" class="menu-item lang menu-item-7" tabindex="0">
+                <!-- <a href="javascript:void(0)" (focus)="openLanguagesList()" (blur)="closeLanguagesList()"><i class="fa fa-language mr-1"></i> {{lang}} <i class="ml-2 fa fa-angle-down"></i></a>
+                <ul id="lang-list" class="hidden lang-list">
+                  <li class="lang-item" value="nl">Nederlands</li>
+                  <li class="lang-item" value="en">English</li>
+                  <li class="lang-item" value="ar">العربية</li>
+                </ul> -->
+                <a href="javascript:void(0)">
+                  <i class="fa fa-globe ml-1 mr-1"></i>
+                  <select class="lang-list" name="lang" [(ngModel)]="constants._lang" (change)="setTransLanguage($event)">
+                    <option class="lang-item" *ngFor="let tlang of transLangs" [value]="tlang">{{tlang | translate}}</option>
+                  </select>
+                  <!-- <select class="lang-list" [(ngModel)]="lang" (change)="changeLanguage()">
+                    <option value="nl" class="lang-item">Nederl</option>
+                    <option value="en" class="lang-item">English</option>
+                    <option value="ar" class="lang-item">العربية</option>
+                  </select> -->
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>

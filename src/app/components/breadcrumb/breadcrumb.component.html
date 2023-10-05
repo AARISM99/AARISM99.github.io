@@ -1,0 +1,9 @@
+<ul class="breadcrumb breadcrumb-news">
+  <li>
+    <a [routerLink]="['/home']">
+      <!-- <i class="fa fa-home fa-fw"></i> -->
+      {{'Startpagina' | translate}}
+    </a>
+  </li>
+  <li *ngFor="let route of routes">{{route | titlecase}}</li>
+</ul>

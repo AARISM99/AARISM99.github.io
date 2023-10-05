@@ -1,0 +1,118 @@
+<div class="banner inscription" style="background-image: url('assets/images/IMG_7823.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; opacity: 1;">
+  <div class="shadow-main">
+    <h1 class="title">{{'Inschrijven lessen' | translate}}</h1>
+    <app-breadcrumb [routes]="[title[constants._lang]]"></app-breadcrumb>
+    <div class="item-content">
+      <div class="gb-middle">
+        <div class="slider-content inscription">
+          <img src="assets/images/lessons1.jpg" alt="lessons1.jpg">
+          <div class="description">
+            <h5 class="title default-underline">{{'Informaties over inschrijving' | translate}}</h5>
+            <p>{{description[constants._lang]}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="main-container">
+  <div class="container mt-6">
+    <h2 class="title default-underline">{{'Inschrijvingsformulier voor studenten' | translate}}</h2>
+    <div class="calendarConfigForm">
+      <form [formGroup]="inscriptionForm" (ngSubmit)="register()">
+        <div class="row m-0">
+          <div class="form-group col-lg-4 col-md-4">
+            <label class="col-form-label form-control-label" for="firstname">{{'Voornaam' | translate}}</label>
+            <input class="form-control" type="text" id="firstname" formControlName="firstname" [placeholder]="('Jouw voornaam' | translate) + '..'">
+            <div *ngIf="submitted && f['firstname'].errors" class="invalid-feedback">
+              <div *ngIf="f['firstname'].errors['required']">{{'Voornaam is verplicht' | translate}}</div>
+            </div>
+          </div>
+          <div class="form-group col-lg-4 col-md-4">
+            <label class="col-form-label form-control-label" for="secondname">{{'Tweede naam' | translate}}</label>
+            <input class="form-control" type="text" id="secondname" formControlName="secondname" [placeholder]="('Jouw tweede naam' | translate) + '..'">
+            <div *ngIf="submitted && f['secondname'].errors" class="invalid-feedback">
+              <div *ngIf="f['secondname'].errors['required']">{{'Tweede naam is verplicht' | translate}}</div>
+            </div>
+          </div>
+          <div class="form-group col-lg-4 col-md-4">
+            <label class="col-form-label form-control-label" for="lastname">{{'Achternaam' | translate}}</label>
+            <input class="form-control" type="text" id="lastname" formControlName="lastname" [placeholder]="('Jouw achternaam' | translate) + '..'">
+            <div *ngIf="submitted && f['lastname'].errors" class="invalid-feedback">
+              <div *ngIf="f['lastname'].errors['required']">{{'Achternaam is verplicht' | translate}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="row m-0">
+          <div class="form-group col-lg-6 col-md-6">
+            <label class="col-form-label form-control-label" for="date_of_birth">{{'Geboortedatum' | translate}}</label>
+            <input (change)="selectDateOfBirth()" class="form-control" type="date" id="date_of_birth" formControlName="date_of_birth" [placeholder]="('Jouw geboortedatum' | translate) + '..'">
+            <div *ngIf="submitted && f['date_of_birth'].errors" class="invalid-feedback">
+              <div *ngIf="f['date_of_birth'].errors['required']">{{'Geboortedatum is verplicht' | translate}}</div>
+            </div>
+          </div>
+          <div class="form-group col-lg-6 col-md-6">
+            <label class="col-form-label form-control-label" for="">{{'Seks' | translate}}</label>
+            <div class="form-check">
+              <span class="form-check">
+                <input class="form-check-input" type="radio" name="manSex" id="manSex" checked value="man" (change)="checkmanSex()">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  {{'Man' | translate}}
+                </label>
+              </span>
+              <span class="form-check">
+                <input class="form-check-input" type="radio" name="womanSex" id="womanSex" value="woman" (change)="checkwomanSex()">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  {{'Vrouw' | translate}}
+                </label>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="row m-0">
+          <div class="form-group col-lg-4 col-md-4">
+            <label class="col-form-label form-control-label" for="address">{{'Adres' | translate}}</label>
+            <input class="form-control" type="text" id="address" formControlName="address" [placeholder]="('Jouw adres' | translate) + '..'">
+            <div *ngIf="submitted && f['address'].errors" class="invalid-feedback">
+              <div *ngIf="f['address'].errors['required']">{{'Adres is verplicht' | translate}}</div>
+            </div>
+          </div>
+          <div class="form-group col-lg-4 col-md-4">
+            <label class="col-form-label form-control-label" for="city">{{'Stad' | translate}}</label>
+            <input class="form-control" type="text" id="city" formControlName="city" [placeholder]="('Jouw stad' | translate) + '..'">
+            <div *ngIf="submitted && f['address'].errors" class="invalid-feedback">
+              <div *ngIf="f['address'].errors['required']">{{'Adres is verplicht' | translate}}</div>
+            </div>
+          </div>
+          <div class="form-group col-lg-4 col-md-4">
+            <label class="col-form-label form-control-label" for="postal_code">{{'Postcode' | translate}}</label>
+            <input class="form-control" type="text" id="postal_code" formControlName="postal_code" oninput="this.value = this.value.replace(/[^0-9]/g, '');" [placeholder]="('Jouw postcode' | translate) + '..'">
+            <div *ngIf="submitted && f['postal_code'].errors" class="invalid-feedback">
+              <div *ngIf="f['postal_code'].errors['required']">{{'Postcode is verplicht' | translate}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="row m-0">
+          <div class="form-group col-lg-6 col-md-6">
+            <label class="col-form-label form-control-label" for="email">{{'E-mailadres' | translate}}</label>
+            <input class="form-control" type="email" id="email" formControlName="email" [placeholder]="('Jouw e-mailadres' | translate) + '..'">
+            <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+              <div *ngIf="f['email'].errors['required']">{{'E-mailadres is verplicht' | translate}}</div>
+            </div>
+          </div>
+          <div class="form-group col-lg-6 col-md-6">
+            <label class="col-form-label form-control-label" for="tel">{{'Tel' | translate}}</label>
+            <input class="form-control" type="tel" id="tel" formControlName="tel" [placeholder]="('Jouw tel' | translate) + '..'">
+            <div *ngIf="submitted && f['tel'].errors" class="invalid-feedback">
+              <div *ngIf="f['tel'].errors['required']">{{'Tel is verplicht' | translate}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <button type="submit" id="registerButton" class="btn btn-default p-4 mt-4">{{'Register' | translate}}</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
