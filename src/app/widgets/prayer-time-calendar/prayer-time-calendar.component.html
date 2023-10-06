@@ -7,7 +7,7 @@
       {{extractTextByLanguage(locationAddress!.country)}}
     </h3>
     <div class="pt-date font-dark font-sm">
-      <p *ngIf="dateGregorian != undefined">{{dateGregorian!.weekday!.en + ' ' + dateGregorian!.month!.en + ' ' + dateGregorian!.day + ', ' + dateGregorian!.year}}</p>
+      <p *ngIf="dateGregorian != undefined">{{constants._lang == 'ar' ? this.dateGregorian.date : dateGregorian!.weekday!.en + ' ' + dateGregorian!.month!.en + ' ' + dateGregorian!.day + ', ' + dateGregorian!.year}}</p>
       <p *ngIf="dateHijri != undefined" class="font-weight-bold">{{dateHijri!.weekday![constants._lang == 'ar' ? constants._lang : 'en'] + ' ' + dateHijri!.day + ' ' + dateHijri!.month![constants._lang == 'ar' ? constants._lang : 'en'] + ', ' + dateHijri!.year}}</p>
     </div>
   </div>

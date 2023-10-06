@@ -1470,6 +1470,12 @@ a.text-darker:hover {
     height: max-content;
 }
 
+@media(max-width: 380px) {
+  .navbar-brand {
+    max-width: 150px;
+  }
+}
+
 input.wpcf7-text{
     width: 100%;
     display: inline-block;
@@ -3276,13 +3282,16 @@ footer:-ms-input-placeholder {
   position: relative;
   display: table;
   width: 100%;
-  top: calc(50% - 50px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 0px 50px;
 }
 
 .gb-middle {
   height: auto;
-  display: table-cell;
+  /* display: table-cell; */
+  display: contents;
   vertical-align: middle;
   width: 100%;
   margin: 0 auto;
@@ -3327,24 +3336,76 @@ footer:-ms-input-placeholder {
 
 .slider-content.inscription {
   display: flex;
+  gap: 30px;
+  /* flex-wrap: wrap; */
   background: url(/assets/images/pattern.png) #ebebeb;
   border-radius: 15px;
   overflow: hidden;
+  padding: 30px;
 }
 
 .slider-content.inscription .description {
   color: black;
   font-size: 18px;
-  padding: 30px 30px;
+  /* padding: 30px 30px; */
+  /* width: 65%; */
 }
 
+.slider-content.inscription .img-content {
+  flex: 0 0 30%;
+  /* width: 35%; */
+  /* padding: 30px 30px; */
+}
 
-.slider-content.inscription .title {
+.slider-content.inscription .description .title {
   font-size: 28px;
 }
 
+.slider-content.inscription .description .p {
+  margin: 0;
+}
+
 .slider-content.inscription img {
-  width: 40%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media(max-width:480px) {
+  .slider-content.inscription {
+    max-height: 400px;
+  }
+  .slider-content.inscription .description {
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .slider-content.inscription .img-content {
+    display: none;
+  }
+  .slider-content.inscription .description .title {
+    font-size: 24px;
+  }
+}
+
+@media(min-width:481px) and (max-width:650px) {
+  .slider-content.inscription {
+    max-height: 400px;
+  }
+  .slider-content.inscription .description {
+    font-size: 15px;
+    /* padding: 20px; */
+    text-align: center;
+  }
+  .slider-content.inscription .img-content {
+    flex: 0 0 100%;
+    /* padding: 20px; */
+  }
+  .slider-content.inscription .description .title {
+    font-size: 24px;
+  }
+
 }
 
 .slider-content.donation {
@@ -4739,6 +4800,15 @@ a.white:active {
     text-align: center;
     color: #fff;
     text-transform: uppercase;
+}
+
+@media(max-width:667px) {
+  .banner h1.title {
+    font-size: 30px;
+  }
+  .breadcrumb.breadcrumb-news {
+    top: 155px;
+  }
 }
 
 .banner.page404 .banner-content h1 {
@@ -8125,6 +8195,7 @@ p.about-author-paragraph:hover a{
   /* color: #e89500; */
   color: #3d858d;
   vertical-align: middle;
+  direction: ltr;
 }
 
 @media(max-width: 768px) {
@@ -8640,6 +8711,15 @@ app-prayer-times .main-container {
   font-size: 14px;
   display: flex;
   flex-direction: column;
+}
+
+@media(max-width:767px) {
+  .duaLocation {
+    text-align: center;
+  }
+  .duaLocation>* {
+    text-align: center;
+  }
 }
 
 .duaLocation>* {
