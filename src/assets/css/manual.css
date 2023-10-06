@@ -8743,8 +8743,8 @@ app-prayer-times .main-container {
   width: 50px;
   aspect-ratio: 1;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 30px;
+  right: 30px;
   z-index: 20000;
   background: #f3a00c;
   border-radius: 100%;
