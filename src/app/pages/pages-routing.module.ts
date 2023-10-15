@@ -9,6 +9,7 @@ import { PrayerTimesComponent } from './prayer-times/prayer-times.component';
 import { NewsComponent } from './news/news.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { BlogComponent } from './blog/blog.component';
+import { ActivitiesComponent } from './activities/activities.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'agenda',
     component: AgendaComponent
+  },
+  {
+    path: 'agenda/activities',
+    component: ActivitiesComponent
   },
   {
     path: 'donation',

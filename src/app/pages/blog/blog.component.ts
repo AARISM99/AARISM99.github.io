@@ -28,14 +28,14 @@ export class BlogComponent {
     //   console.log(params);
     // });
 
-    this.activatedRoute.queryParams.subscribe(params => {
-      if(params['lang']) {
-        this.constants._lang = params['lang'];
-      }
-      else {
-        this.translateService.use(this.constants._lang);
-      }
-    })
+    // this.activatedRoute.queryParams.subscribe(params => {
+    //   if(params['lang']) {
+    //     this.constants._lang = params['lang'];
+    //   }
+    //   else {
+    //     this.translateService.use(this.constants._lang);
+    //   }
+    // })
   }
 
 }

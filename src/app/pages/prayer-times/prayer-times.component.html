@@ -242,12 +242,12 @@
       <table class="table prayerTimes">
         <thead>
           <tr>
-            <th i18n>{{'Fajr' | translate}}</th>
-            <th i18n>{{'Zonsopkomst' | translate}}</th>
-            <th i18n>{{'Dhuhr' | translate}}</th>
-            <th i18n>{{'Asr' | translate}}</th>
-            <th i18n>{{'Maghreb' | translate}}</th>
-            <th i18n>{{'Isha' | translate}}</th>
+            <th>{{'Fajr' | translate}}</th>
+            <th>{{'Zonsopkomst' | translate}}</th>
+            <th>{{'Dhuhr' | translate}}</th>
+            <th>{{'Asr' | translate}}</th>
+            <th>{{'Maghreb' | translate}}</th>
+            <th>{{'Isha' | translate}}</th>
           </tr>
         </thead>
         <tbody *ngIf="calendar.length > 0">
@@ -262,7 +262,7 @@
         </tbody>
         <tbody *ngIf="calendar.length <= 0">
           <div class="empty_content p-3">
-            No calendar found.
+            {{'Geen kalender gevonden.' | translate}}
           </div>
         </tbody>
       </table>

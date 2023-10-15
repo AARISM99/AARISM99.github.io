@@ -110,13 +110,21 @@ export class HomeComponent {
 
   ngOnInit(): void {
 
-    this.activatedRoute.queryParams.subscribe(params => {
-      if(params['lang']) {
-        this.translateService.use(params['lang']);
-      }
-      else {
-        this.translateService.use(this.constants._lang);
-      }
-    })
+    // this.activatedRoute.queryParams.subscribe(params => {
+    //   if(params['lang']) {
+    //     this.translateService.use(params['lang']);
+    //   }
+    //   else {
+    //     this.translateService.use(this.constants._lang);
+    //   }
+    // })
+  }
+
+  encodeString(val: any): string {
+    return GlobalConstants.encoding(val);
+  }
+
+  decodeString(val: any): string {
+    return GlobalConstants.decoding(val);
   }
 }

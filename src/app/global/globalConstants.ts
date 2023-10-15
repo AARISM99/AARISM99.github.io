@@ -2,6 +2,7 @@ export class GlobalConstants {
 
   private static defaultLang: string = "nl";
   private static lang: string = "nl";
+  private static langs: string[] = ["nl", "en", "ar"];
   private static direction: string = "ltr";
   private static method: number = 3; // Muslim World League method
   private static openCageToken: string = "f37cb9d77203422bb1b3d0687b8bc362";
@@ -41,6 +42,7 @@ export class GlobalConstants {
 
   get _defaultLang(){return GlobalConstants.defaultLang}
   get _lang() {return GlobalConstants.lang}
+  get _langs() {return GlobalConstants.langs}
   get _direction() {return GlobalConstants.direction}
   get _method() {return GlobalConstants.method}
   get _openCageToken() {return GlobalConstants.openCageToken}
@@ -48,6 +50,7 @@ export class GlobalConstants {
 
   // set _defaultLang(_defaultLang: string) {GlobalConstants.defaultLang = _defaultLang}
   set _lang(_lang: string) {GlobalConstants.lang = _lang}
+  set _langs(_langs: string[]) {GlobalConstants.langs = _langs}
   set _direction(_direction: string) {GlobalConstants.direction = _direction}
   set _method(_method: number) {GlobalConstants.method = _method}
   set _openCageToken(_openCageToken: string) {GlobalConstants.openCageToken = _openCageToken}
@@ -113,6 +116,14 @@ export class GlobalConstants {
     });
 
     return selctedItem
+  }
+
+  public static encoding(val: string) {
+    return btoa(btoa(btoa(btoa(val))));
+  }
+
+  public static decoding(val: string) {
+    return atob(atob(atob(atob(val))));
   }
 
 

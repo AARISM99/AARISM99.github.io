@@ -16,6 +16,8 @@ import { NewsComponent } from './news/news.component';
 import { SharedModule } from '../shared/shared.module';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { BlogComponent } from './blog/blog.component';
+import { ActivitiesComponent } from './activities/activities.component';
+import { ProgramComponent } from './program/program.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { BlogComponent } from './blog/blog.component';
     PrayerTimesComponent,
     NewsComponent,
     InscriptionComponent,
-    BlogComponent
+    BlogComponent,
+    ActivitiesComponent,
+    ProgramComponent
   ],
   imports: [
     CommonModule,

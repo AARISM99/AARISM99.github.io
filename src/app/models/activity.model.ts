@@ -7,5 +7,6 @@ export class Activity {
   from?: Date;
   to?: Date;
   image?: string;
+  location?: KeyVal;
   date_publication?: Date;
 }

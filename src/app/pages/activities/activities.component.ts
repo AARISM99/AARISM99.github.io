@@ -1,24 +1,30 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { GlobalConstants } from 'src/app/global/globalConstants';
+import { KeyVal } from 'src/app/models/keyValue.model';
 
 @Component({
-  selector: 'app-page404',
-  templateUrl: './page404.component.html',
-  styleUrls: ['./page404.component.scss']
+  selector: 'app-activities',
+  templateUrl: './activities.component.html',
+  styleUrls: ['./activities.component.scss']
 })
-export class Page404Component implements OnInit {
-
+export class ActivitiesComponent {
   constants: GlobalConstants = new GlobalConstants();
+  title: KeyVal = {
+    nl: 'Activiteiten',
+    en: 'Activities',
+    ar: 'الأنشطة'
+  }
 
   constructor(private translateService: TranslateService,
-    private activatedRoute: ActivatedRoute) {}
+              private activatedRoute: ActivatedRoute){
+  }
 
-  ngOnInit() {
+  ngOnInit(): void {
     // this.activatedRoute.queryParams.subscribe(params => {
     //   if(params['lang']) {
-    //     this.translateService.use(params['lang']);
+    //     this.constants._lang = params['lang'];
     //   }
     //   else {
     //     this.translateService.use(this.constants._lang);

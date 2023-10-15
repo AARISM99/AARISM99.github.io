@@ -17,18 +17,18 @@ export class BreadcrumbComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.activatedRoute.queryParams.subscribe(params => {
-      if(params['lang']) {
-        if(params['lang'] == "ar") {
-          this.constants._direction = "rtl";
-        }
-        else {
-          this.constants._direction = "ltr";
-        }
-        this.constants._lang = params['lang'];
-      }
-      this.translateService.use(this.constants._lang);
-    })
+    // this.activatedRoute.queryParams.subscribe(params => {
+    //   if(params['lang']) {
+    //     if(params['lang'] == "ar") {
+    //       this.constants._direction = "rtl";
+    //     }
+    //     else {
+    //       this.constants._direction = "ltr";
+    //     }
+    //     this.constants._lang = params['lang'];
+    //   }
+    //   this.translateService.use(this.constants._lang);
+    // })
   }
 
   @Input() routes: string[] = [];

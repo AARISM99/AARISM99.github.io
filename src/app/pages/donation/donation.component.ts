@@ -43,13 +43,13 @@ export class DonationComponent {
 
   ngOnInit(): void {
 
-    this.activatedRoute.queryParams.subscribe(params => {
-      if(params['lang']) {
-        this.translateService.use(params['lang']);
-      }
-      else {
-        this.translateService.use(this.constants._lang);
-      }
-    })
+    // this.activatedRoute.queryParams.subscribe(params => {
+    //   if(params['lang']) {
+    //     this.translateService.use(params['lang']);
+    //   }
+    //   else {
+    //     this.translateService.use(this.constants._lang);
+    //   }
+    // })
   }
 }
