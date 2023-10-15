@@ -170,8 +170,8 @@ export class AgendaCalendarComponent {
         en: '',
         ar: ''
       },
-      from: new Date(),
-      to: new Date(),
+      from: new Date("20-11-2023"),
+      to: new Date("20-12-2023"),
       image: "assets/images/who_is_allah.jpg"
     },
   ];
@@ -184,6 +184,7 @@ export class AgendaCalendarComponent {
   ngOnInit() {
 
     // this.lessons = [];
+    this.activities = [];
 
     this.activatedRoute.queryParams.subscribe(params => {
       if(params['lang']) {

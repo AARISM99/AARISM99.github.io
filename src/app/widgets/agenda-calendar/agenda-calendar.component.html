@@ -19,7 +19,7 @@
             <table class="table m-0" *ngIf="lessons.length > 0">
               <tbody>
                 <tr *ngFor="let lesson of lessons">
-                  <td class="time">{{lesson.from | date: "shortTime" | time24to12Transform}} <i class="fa fa-long-arrow-right"></i> {{lesson.to | date: "shortTime" | time24to12Transform}}</td>
+                  <td class="time">{{lesson.from | date: "shortTime" | time24to12Transform}} <i class="fa time-separator"></i> {{lesson.to | date: "shortTime" | time24to12Transform}}</td>
                   <td class="separator"></td>
                   <td class="title">{{lesson.title![constants._lang]}}</td>
                 </tr>
@@ -51,7 +51,7 @@
               </tbody>
             </table>
             <div class="empty_content" *ngIf="lessons.length <= 0">
-              <p>No program found for today !</p>
+              <p>{{'Geen programma gevonden voor vandaag !' | translate}}</p>
             </div>
             <div class="footer">
               <a class="more-contents" [routerLink]="['/agenda']">{{'Meer' | translate}} <i class="fa fa-arrow-right ml-1"></i></a>
@@ -74,7 +74,7 @@
               </ng-template>
             </owl-carousel-o>
             <div class="empty_content" *ngIf="activities.length <= 0">
-              <p>No activity found for the moment !</p>
+              <p>{{'Momenteel geen activiteit gevonden !' | translate}}</p>
             </div>
             <div class="footer">
               <a class="more-contents" [routerLink]="['/agenda']">{{'Meer' | translate}} <i class="fa fa-arrow-right ml-1"></i></a>

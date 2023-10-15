@@ -25,10 +25,10 @@ export class TapToTopComponent {
     // console.log(this.tapToTopBtn);
     // console.log("scroll function called");
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      this.tapToTopBtn.style.display = "block";
+      this.tapToTopBtn.style.opacity = "1";
     }
     else {
-      this.tapToTopBtn.style.display = "none";
+      this.tapToTopBtn.style.opacity = "0";
     }
     // console.log(this.tapToTopBtn);
   }
