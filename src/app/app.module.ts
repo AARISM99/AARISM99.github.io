@@ -39,7 +39,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     CUSTOM_ELEMENTS_SCHEMA
   ],
   providers: [
-    { provide: LOCALE_ID, useValue: 'nl'},
+    {
+      provide: LOCALE_ID,
+      useValue: "nl",
+    }
   ],
   bootstrap: [AppComponent],
 })

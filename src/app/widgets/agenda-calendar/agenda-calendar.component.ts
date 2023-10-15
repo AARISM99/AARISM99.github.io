@@ -13,20 +13,26 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class AgendaCalendarComponent {
 
+  constants: GlobalConstants = new GlobalConstants();
+
   customSlideActivitiesOptions: OwlOptions = {
+    rtl: this.constants._direction == 'rtl' ?  true : false,
     loop: true,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,
-    dots: true,
-    nav: false,
+    dots: false,
+    nav: true,
     navSpeed: 700,
-    navText: ['', ''],
+    navText: ['&#8249;', '&#8250;'],
     responsive: {
       0: {
         items: 1
       }
     },
+    autoplay: true,
+    autoplayTimeout: 8000,
+    autoplayHoverPause: true
   }
 
   lessons: Lesson[] = [
@@ -38,17 +44,17 @@ export class AgendaCalendarComponent {
         ar: 'السنة النبوية'
       },
       lecturer: {
-        nl: 'Uitleg van de Muwatta',
-        en: 'Explanation of the Muwatta',
-        ar: 'شرح الموطأ'
+        nl: '',
+        en: '',
+        ar: ''
       },
       description: {
         nl: '',
         en: '',
         ar: ''
       },
-      from: new Date(),
-      to: new Date(),
+      from: new Date(2023, 9, 12, 9, 30),
+      to: new Date(2023, 9, 12, 12, 0),
       image: ""
     },
     {
@@ -159,40 +165,69 @@ export class AgendaCalendarComponent {
   ];
   activities: Activity[] = [
     {
-      _id: 0,
+      _id: 23879320421490174912,
       title: {
         nl: 'Ramadan-geschenkmand',
         en: 'Ramadan gift basket',
         ar: 'سلة رمضانية'
       },
       description: {
-        nl: '',
-        en: '',
-        ar: ''
+        nl: 'Terwijl de heilige maand Ramadan nadert, kondigt het Icentrum de start aan van het organiseren van een solidariteitscampagne om donaties in te zamelen voor de armen en behoeftigen in de regio Amsterdam en de omliggende gebieden onder de slogan ‘Ramadan geschenkmand. deelname aan het donatieproces moet contact opnemen met het centrum of rechtstreeks doneren via de bankrekening van het centrum',
+        en: "As the holy month of Ramadan approaches, Icentrum announces the start of organizing a solidarity campaign to collect donations for the poor and needy in the Amsterdam region and the surrounding areas under the slogan “Ramadan Gift basket”. Therefore, those wishing to participate in the donation process must contact the center or donate directly through the account. The center's bank account",
+        ar: 'مع اقتراب شهر رمضان المبارك يعلن مركز عبد العزيز ابن باز الاسلامي عن بدأ تنظيم حملة تضامنية لجمع التبرعات من أجل الفقراء و المحتاجين في منطقة أمستردام و النواحي تحت شعار "قفة رمضان"، لهذا على الراغبين في الانخراط في عملية التبرع الاتصال بالمركز أو التبرع مباشرة عبر الحساب البنكي التابع للمركز'
       },
-      from: new Date(),
-      to: new Date(),
-      image: "assets/images/who_is_allah.jpg"
+      from: new Date(2024, 1, 25, 25, 65),
+      to: new Date(2023, 3, 7, 25, 65),
+      location: {
+        nl: 'Drachten moskee',
+        en: 'Drachten mosque',
+        ar: 'مسجد دراختن'
+      },
+      image: "assets/images/ramadan_basket.jpg"
+    },
+    {
+      _id: 23879320421490174915,
+      title: {
+        nl: 'Lezing getiteld “Vreedzaam samenleven” door Dr. Rashid Nafi',
+        en: 'Lecture entitled “Peaceful Coexistence” by Dr. Rashid Nafi',
+        ar: 'محاضرة بعنوان "التعايش السلمي" للدكتور رشيد نافع'
+      },
+      description: {
+        nl: 'Gesponsord door het Icentrum, zal Dr. Rashid Nafi op de negentiende van deze maand een lezing houden onder de titel ‘Vreedzaam samenleven’. Om een ​​uitnodiging aan te vragen, kunt u contact met ons opnemen via het e-mailadres of telefoonnummer van het centrum.',
+        en: "Sponsored by the Abdul Aziz Ibn Baz Islamic Center, Dr. Rashid Nafi will deliver a lecture under the title “Peaceful Coexistence” on the nineteenth of this month. To request an invitation, please contact us via the center’s email or phone number.",
+        ar: 'برعاية مركز عبد العزيز ابن باز الاسلامي، سيقوم الدكتور رشيد نافع بإلقاء محاضرة تحت عنوان "التعايش السلمي" و ذلك يوم التاسع عشر من هذا الشهر، لطلب الدعوة المرجو التواصل معنا عبر البريد الالكتروني أو رقم الهاتف الخاصين بالمركز'
+      },
+      from: new Date(2023, 10, 19, 25, 65),
+      to: new Date(2023, 10, 20, 25, 65),
+      location: {
+        nl: 'Drachten moskee',
+        en: 'Drachten mosque',
+        ar: 'مسجد دراختن'
+      },
+      image: "assets/images/rachid_nafie.jpg"
     },
   ];
 
-  constants: GlobalConstants = new GlobalConstants();
-
-  constructor(private translateService: TranslateService,
-              private activatedRoute: ActivatedRoute) {}
+  constructor(private translateService: TranslateService,private activatedRoute: ActivatedRoute){}
 
   ngOnInit() {
 
-    // this.lessons = [];
+    // console.log(new Date(2023, 9, 12, 9, 30));
 
-    this.activatedRoute.queryParams.subscribe(params => {
-      if(params['lang']) {
-        this.translateService.use(params['lang']);
-      }
-      else {
-        this.translateService.use(this.constants._lang);
-      }
-    })
+    // this.lessons = [];
+    // this.activities = [];
+
+    // this.activatedRoute.queryParams.subscribe(params => {
+    //   if(params['lang']) {
+    //     this.translateService.use(params['lang']);
+    //     if(params['lang'] == 'ar') {
+    //       // this.customSlideActivitiesOptions.rtl = true;
+    //     }
+    //   }
+    //   else {
+    //     this.translateService.use(this.constants._lang);
+    //   }
+    // })
 
   }
 
@@ -208,5 +243,13 @@ export class AgendaCalendarComponent {
     }
     document.getElementById("tab_" + id)!.classList.add("active");
     document.getElementById("content_" + id)!.classList.add("active");
+  }
+
+  encodeString(val: any): string {
+    return GlobalConstants.encoding(val);
+  }
+
+  decodeString(val: any): string {
+    return GlobalConstants.decoding(val);
   }
 }

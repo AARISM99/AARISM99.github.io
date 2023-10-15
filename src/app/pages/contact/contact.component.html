@@ -8,7 +8,8 @@
           <h5>{{'Stichting Islamitsche gemeenschap Drachten' | translate}}</h5>
           <h1>{{'Welkom op onze website' | translate}}</h1>
           <div class="buttons">
-              <a [routerLink]="['/contact']" class="btn btn-default">{{'Waar staan wij voor ?' | translate}}</a>
+              <!-- <a [routerLink]="['/contact']" [queryParams]="{lang: constants._lang}" class="btn btn-default">{{'Waar staan wij voor ?' | translate}}</a> -->
+              <a (click)="goToContactSection()" class="btn btn-default">{{'Waar staan wij voor ?' | translate}}</a>
           </div>
         </div>
       </div>
@@ -16,7 +17,7 @@
   </div>
 </div>
 
-<section class="contact-section">
+<section class="contact-section" id="contact-section">
   <div class="row">
     <div class="col-lg-7 col-md-6 col-sm-6 col-xs-12">
       <div class="mb-5">

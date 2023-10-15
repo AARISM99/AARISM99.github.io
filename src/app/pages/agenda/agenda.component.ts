@@ -23,14 +23,14 @@ export class AgendaComponent  implements OnInit {
   }
 
   ngOnInit(): void {
-    this.activatedRoute.queryParams.subscribe(params => {
-      if(params['lang']) {
-        this.constants._lang = params['lang'];
-      }
-      else {
-        this.translateService.use(this.constants._lang);
-      }
-    })
+    // this.activatedRoute.queryParams.subscribe(params => {
+    //   if(params['lang']) {
+    //     this.constants._lang = params['lang'];
+    //   }
+    //   else {
+    //     this.translateService.use(this.constants._lang);
+    //   }
+    // })
   }
 
 }

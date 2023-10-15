@@ -64,14 +64,14 @@ export class PrayerTimesComponent implements OnInit {
 
   ngOnInit() {
 
-    this.activatedRoute.queryParams.subscribe(params => {
-      if(params['lang']) {
-        this.translateService.use(params['lang']);
-      }
-      else {
-        this.translateService.use(this.constants._lang);
-      }
-    })
+    // this.activatedRoute.queryParams.subscribe(params => {
+    //   if(params['lang']) {
+    //     this.translateService.use(params['lang']);
+    //   }
+    //   else {
+    //     this.translateService.use(this.constants._lang);
+    //   }
+    // })
 
     this.calendarConfigForm = this.formBuilder.group({
       month: [this.dateNow.getMonth(), Validators.required],

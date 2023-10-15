@@ -39,17 +39,19 @@ export class PrayerTimeCalendarComponent implements OnInit {
 
   ngOnInit() {
 
-    this.activatedRoute.queryParams.subscribe(params => {
-      if(params['lang']) {
-        this.translateService.use(params['lang']);
-      }
-      else {
-        this.translateService.use(this.constants._lang);
-      }
-    })
+    // this.activatedRoute.queryParams.subscribe(params => {
+    //   if(params['lang']) {
+    //     this.translateService.use(params['lang']);
+    //   }
+    //   else {
+    //     this.translateService.use(this.constants._lang);
+    //   }
+    // })
 
     setInterval(() => {
-      this.dateNow = new Date(); // new Date('May 04, 2023 19:14:07');
+      // this.dateNow = new Date(2023, 9, 11, 19, 20);
+      this.dateNow = new Date();
+      // console.log(this.dateNow);
       this.timeNow = {
         hours: this.dateNow.getHours(),
         minutes: this.dateNow.getMinutes()

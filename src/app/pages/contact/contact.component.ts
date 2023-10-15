@@ -35,14 +35,14 @@ export class ContactComponent implements OnInit, OnChanges {
 
   ngOnInit(): void {
 
-    this.activatedRoute.queryParams.subscribe(params => {
-      if(params['lang']) {
-        this.constants._lang = params['lang'];
-      }
-      else {
-        this.translateService.use(this.constants._lang);
-      }
-    })
+    // this.activatedRoute.queryParams.subscribe(params => {
+    //   if(params['lang']) {
+    //     this.constants._lang = params['lang'];
+    //   }
+    //   else {
+    //     this.translateService.use(this.constants._lang);
+    //   }
+    // })
 
     this.contactForm = this.formBuilder.group({
       firstname: ['', Validators.required],
@@ -70,6 +70,14 @@ export class ContactComponent implements OnInit, OnChanges {
     var manSexBtn = document.getElementById('manSex') as HTMLInputElement;
     manSexBtn.checked = false;
     this.f['sex'].setValue('woman');
+  }
+
+  goToContactSection() {
+    (document.getElementById("contact-section") as HTMLInputElement).scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest"
+    });
   }
 
   send() {

@@ -25,17 +25,18 @@ export class TapToTopComponent {
     // console.log(this.tapToTopBtn);
     // console.log("scroll function called");
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      this.tapToTopBtn.style.display = "block";
+      this.tapToTopBtn.style.opacity = "1";
     }
     else {
-      this.tapToTopBtn.style.display = "none";
+      this.tapToTopBtn.style.opacity = "0";
     }
     // console.log(this.tapToTopBtn);
   }
 
   scrollToTop() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    document.body.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    // document.body.scrollTop = 0; // For Safari
+    // document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
 
 }

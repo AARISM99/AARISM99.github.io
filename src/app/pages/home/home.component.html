@@ -46,7 +46,7 @@
           </p>
 
           <div class="buttons mt-4">
-            <a [routerLink]="['/contact']" class="btn btn-default p-4">{{'Contact ons' | translate}}</a>
+            <a [routerLink]="['/contact']" [queryParams]="{lang: constants._lang}" class="btn btn-default p-4">{{'Contact ons' | translate}}</a>
           </div>
 
         </div>
@@ -64,7 +64,7 @@
                 {{'Via deze link kunt u direct doneren.' | translate}}
               </p>
               <div class="buttons">
-                <a [routerLink]="['/donation']" class="btn btn-secondary p-4 radius-2">{{'Doneren' | translate}}</a>
+                <a [routerLink]="['/donation']" [queryParams]="{lang: constants._lang}" class="btn btn-secondary p-4 radius-2">{{'Doneren' | translate}}</a>
               </div>
           </div>
       </div>
@@ -82,8 +82,8 @@
       <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="text-center">
-                  <h1 class="title default-underline center">{{'Recent nieuws' | translate}}</h1>
-                  <p class="paragraph-white">{{'Het nieuws van Islamitisch Centrum Drachten' | translate}}</p>
+                  <h1 class="title default-underline center">{{'Recente blogs' | translate}}</h1>
+                  <p class="paragraph-white">{{'Het blogs van Icentrum' | translate}}</p>
               </div>
           </div>
       </div>
@@ -111,7 +111,7 @@
                 </div>
                 <div class="buttons">
                     <a *ngIf="news?.external" [href]="news?.external_link" class="btn btn-default">{{'Meer lezen' | translate}}</a>
-                    <a *ngIf="!news?.external" [routerLink]="['/news/'+ news?._id]" class="btn btn-default">{{'Meer lezen' | translate}}</a>
+                    <a *ngIf="!news?.external" [routerLink]="['/news/'+ news?.title![constants._lang]]" [queryParams]="{vqi: encodeString(news._id), lang: constants._lang}" class="btn btn-default">{{'Meer lezen' | translate}}</a>
                 </div>
             </div>
         </div>
