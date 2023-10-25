@@ -1,0 +1,45 @@
+<div class="banner" style="background-image: url('assets/images/IMG_7823.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; opacity: 1;">
+  <div class="shadow-main">
+    <h1 class="title">{{'Blogs' | translate}}</h1>
+    <app-breadcrumb [routes]="[{title: title[constants._lang], path: '/blogs'}]"></app-breadcrumb>
+    <div class="item-content">
+      <div class="gb-middle">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="main-container mt-8">
+  <div class="container">
+    <section>
+      <h2 class="title default-underline m-4">{{'Laatste blogs' | translate}}</h2>
+      <div class="blog-section">
+        <article class="blog-element" *ngFor="let blog of recentBlogs">
+          <div class="img_container" [routerLink]="['/blogs/'+ blog?.title![constants._lang]]" [queryParams]="{vqi: encodeString(blog._id), lang: constants._lang}">
+            <span class="layer-eye">
+              <i aria-hidden="true" class="icon-eye"></i>
+            </span>
+            <img class="img" [src]="blog.image" alt="who_is_allah.jpg">
+          </div>
+          <div class="content">
+            <small class="date">{{ blog.date_publication | localeDate:constants._lang:'EEEE d, MMMM' | uppercase }}</small>
+            <h2 class="title">{{ blog.title![constants._lang] }}</h2>
+            <p class="summary">
+              {{
+                blog.summary![constants._lang].length > 300 ?
+                blog.summary![constants._lang].substr(0,300) : blog.summary![constants._lang]
+              }}
+            </p>
+            <h5>
+              <i class="fa fa-user"></i>&nbsp;
+              <span class="author">{{ blog.author![constants._lang] }}</span>
+            </h5>
+          </div>
+          <footer>
+            <a class="more-contents" [routerLink]="['/blogs/'+ blog?.title![constants._lang]]" [queryParams]="{vqi: encodeString(blog._id), lang: constants._lang}">{{'Meer lezen' | translate}} <i class="fa arrow"></i></a>
+          </footer>
+        </article>
+      </div>
+    </section>
+  </div>
+</div>

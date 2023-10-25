@@ -1,17 +1,25 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { GlobalConstants } from 'src/app/global/globalConstants';
 import { Blog } from 'src/app/models/blog.model';
 import { KeyVal } from 'src/app/models/keyValue.model';
+import { BlogService } from 'src/app/services/blog.service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  selector: 'app-blogs',
+  templateUrl: './blogs.component.html',
+  styleUrls: ['./blogs.component.scss']
 })
-export class HomeComponent {
+export class BlogsComponent implements OnInit {
+
+  currentPage: number = 0;
+  pageSize: number = 9;
 
   constants: GlobalConstants = new GlobalConstants();
-
+  title: KeyVal = {
+    nl: 'Blogs',
+    en: 'Blogs',
+    ar: 'مقالات'
+  }
   recentBlogs: Blog[] = [
     {
       _id: 1,
@@ -96,17 +104,21 @@ export class HomeComponent {
     }
   ];
 
-  introduction: KeyVal = {
-    nl: "Bismi llaahi Rrahmani Rrahiem, Alle lof zij Allah, de Heer der werelden, gebeden en vrede zij met Zijn edele dienaar en Boodschapper Mohammed, en met zijn metgezellen en degenen die hem volgen tot de Dag des oordeels. Assalamou 3alaikom wa rahmatoullahi wa barakaatouh, Welkom op de website van moskee en islamitische stichting Drachten : Icentrum. Op deze site willen wij onze leden en andere bezoekers informeren over de gang van zaken wat betreft Icentrum.",
-    en: "Bismi llaahi Rrahmani Rraheem, Praise be to Allah, the Lord of the worlds, prayers and peace be upon His noble servant and Messenger Muhammad, and upon his Companions and those who follow him until the Day of Judgment. Assalamou 3alaikom wa rahmatoullahi wa barakaatouh, Welcome to the website of the mosque and Islamic foundation Drachten: Icentrum. On this site we want to inform our members and other visitors about the state of affairs regarding Icentrum.",
-    ar: "بسم الله الرحمن الرحيم، الحمد لله رب العالمين، والصلاة والسلام على عبده الكريم ورسوله محمد، وعلى أصحابه ومن تبعه إلى يوم الدين. السلام عليكم ورحمة الله وبركاته، مرحبا بكم في موقع مسجد ومؤسسة دراختن الإسلامية: Icentrum. نريد في هذا الموقع إبلاغ أعضائنا والزوار الآخرين بالحالة المتعلقة بـ Icentrum."
+  constructor(private blogService: BlogService){}
+
+  ngOnInit() {
+    this.getBlogs('date_publication', 'desc', this.currentPage, this.pageSize);
+
   }
 
-  constructor(){
+  private getBlogs(sortField?: string, sortOrder?: string, pageNumber?: number, pageSize?: number) {
+    this.blogService.getBlogs(sortField, sortOrder, pageNumber, pageSize).subscribe({
+      next: (v) => {this.recentBlogs = v},
+      error: (e) => {},
+      complete: () => {}
+    })
   }
 
-  ngOnInit(): void {
-  }
 
   encodeString(val: any): string {
     return GlobalConstants.encoding(val);
@@ -115,4 +127,5 @@ export class HomeComponent {
   decodeString(val: any): string {
     return GlobalConstants.decoding(val);
   }
+
 }

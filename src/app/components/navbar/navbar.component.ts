@@ -45,9 +45,11 @@ export class NavbarComponent implements OnInit {
     this.translateService.use($event.target.value);
 
     let urlTree = this.router.parseUrl(this.router.url);
-    urlTree.queryParams = {};
     urlTree.fragment = null; // optional
-    this.router.navigate([urlTree.toString()], { queryParams: {lang: this.constants._lang}})
+    let params = urlTree.queryParams;
+    params['lang'] = this.constants._lang;
+    urlTree.queryParams = {};
+    this.router.navigate([urlTree.toString()], { queryParams: params})
     .then(() => {
       window.location.reload();
     });

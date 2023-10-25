@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { GlobalConstants } from 'src/app/global/globalConstants';
 
-@Component({
-  selector: 'app-page404',
-  templateUrl: './page404.component.html',
-  styleUrls: ['./page404.component.scss']
-})
-export class Page404Component implements OnInit {
 
+@Component({
+  selector: 'app-under-construction',
+  templateUrl: './under-construction.component.html',
+  styleUrls: ['./under-construction.component.scss']
+})
+export class UnderConstructionComponent {
   constants: GlobalConstants = new GlobalConstants();
 
   constructor() {}

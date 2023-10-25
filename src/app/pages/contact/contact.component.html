@@ -1,7 +1,7 @@
 <div class="banner" style="background-image: url('assets/images/IMG_7823.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; opacity: 1;">
   <div class="shadow-main">
     <h1 class="title">{{'Contact' | translate}}</h1>
-    <app-breadcrumb [routes]="[title[constants._lang]]"></app-breadcrumb>
+    <app-breadcrumb [routes]="[{title: title[constants._lang], path: '/contact'}]"></app-breadcrumb>
     <div class="item-content">
       <div class="gb-middle">
         <div class="slider-content welcome">
@@ -17,13 +17,13 @@
   </div>
 </div>
 
-<section class="contact-section" id="contact-section">
+<section class="contact-section mt-8" id="contact-section">
   <div class="row">
     <div class="col-lg-7 col-md-6 col-sm-6 col-xs-12">
       <div class="mb-5">
         <img src="assets/images/940_700.png" alt="" class="img">
       </div>
-      <div class="mapouter">
+      <div class="mapouter mb-5">
         <div class="gmap_canvas">
           <div class="loader"></div>
           <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Langewyk 133, 9202 CN Drachten&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>

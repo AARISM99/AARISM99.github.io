@@ -19,8 +19,8 @@ export class AgendaCalendarComponent {
     rtl: this.constants._direction == 'rtl' ?  true : false,
     loop: true,
     mouseDrag: true,
-    touchDrag: true,
-    pullDrag: true,
+    touchDrag: false,
+    pullDrag: false,
     dots: false,
     nav: true,
     navSpeed: 700,
@@ -32,7 +32,7 @@ export class AgendaCalendarComponent {
     },
     autoplay: true,
     autoplayTimeout: 8000,
-    autoplayHoverPause: true
+    autoplayHoverPause: false
   }
 
   lessons: Lesson[] = [
@@ -176,9 +176,14 @@ export class AgendaCalendarComponent {
         en: "As the holy month of Ramadan approaches, Icentrum announces the start of organizing a solidarity campaign to collect donations for the poor and needy in the Amsterdam region and the surrounding areas under the slogan “Ramadan Gift basket”. Therefore, those wishing to participate in the donation process must contact the center or donate directly through the account. The center's bank account",
         ar: 'مع اقتراب شهر رمضان المبارك يعلن مركز عبد العزيز ابن باز الاسلامي عن بدأ تنظيم حملة تضامنية لجمع التبرعات من أجل الفقراء و المحتاجين في منطقة أمستردام و النواحي تحت شعار "قفة رمضان"، لهذا على الراغبين في الانخراط في عملية التبرع الاتصال بالمركز أو التبرع مباشرة عبر الحساب البنكي التابع للمركز'
       },
+      by: {
+        nl: "Hoofd van het centrum",
+        en: "Head of the center",
+        ar: "رئيس المركز"
+      },
       from: new Date(2024, 1, 25, 25, 65),
       to: new Date(2023, 3, 7, 25, 65),
-      location: {
+      locationAddress: {
         nl: 'Drachten moskee',
         en: 'Drachten mosque',
         ar: 'مسجد دراختن'
@@ -197,9 +202,14 @@ export class AgendaCalendarComponent {
         en: "Sponsored by the Abdul Aziz Ibn Baz Islamic Center, Dr. Rashid Nafi will deliver a lecture under the title “Peaceful Coexistence” on the nineteenth of this month. To request an invitation, please contact us via the center’s email or phone number.",
         ar: 'برعاية مركز عبد العزيز ابن باز الاسلامي، سيقوم الدكتور رشيد نافع بإلقاء محاضرة تحت عنوان "التعايش السلمي" و ذلك يوم التاسع عشر من هذا الشهر، لطلب الدعوة المرجو التواصل معنا عبر البريد الالكتروني أو رقم الهاتف الخاصين بالمركز'
       },
+      by: {
+        nl: "Dr. Rashid Nafie",
+        en: "Dr. Rashid Nafie",
+        ar: "د. رشيد نافع"
+      },
       from: new Date(2023, 10, 19, 25, 65),
       to: new Date(2023, 10, 20, 25, 65),
-      location: {
+      locationAddress: {
         nl: 'Drachten moskee',
         en: 'Drachten mosque',
         ar: 'مسجد دراختن'

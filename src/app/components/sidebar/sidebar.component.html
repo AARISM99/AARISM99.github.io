@@ -12,19 +12,31 @@
       <a [routerLink]="['/home']" aria-current="page">{{'Welkom' | translate}}</a>
     </li>
     <li id="menu-item-43" class="w3-bar-item w3-button menu-item-43">
-      <a [routerLink]="['/inscription']">{{'Inschrijven lessen' | translate}}</a>
+      <a [routerLink]="['/inscription']">{{'Inschrijven' | translate}}</a>
     </li>
     <li id="menu-item-42" class="w3-bar-item w3-button menu-item-42">
-      <a [routerLink]="['/agenda']">{{'Agenda' | translate}}</a>
+      <a [routerLink]="['/agenda']">
+        {{'Agenda' | translate}}
+        <span class="badge">{{'spoedig' | translate}}</span>
+      </a>
+    </li>
+    <li id="menu-item-44" class="menu-item menu-item-44">
+      <a [routerLink]="['/activities']">{{'Activiteiten' | translate}}</a>
     </li>
     <li id="menu-item-87" class="w3-bar-item w3-button menu-item-87">
-      <a [routerLink]="['/donation']">{{'Doneren' | translate}}</a>
+      <a [routerLink]="['/donation']">
+        {{'Doneren' | translate}}
+        <span class="badge">{{'spoedig' | translate}}</span>
+      </a>
     </li>
     <li id="menu-item-68" class="w3-bar-item w3-button menu-item-68">
       <a [routerLink]="['/prayer-times']">{{'Gebedstijden' | translate}}</a>
     </li>
     <!-- <li id="menu-item-41" class="w3-bar-item w3-button menu-item-41"><a
           href="moskee-bezoeken/index.html">Moskee Bezoeken</a></li> -->
+    <li id="menu-item-72" class="menu-item menu-item-72">
+      <a [routerLink]="['/blogs']">{{'Blogs' | translate}}</a>
+    </li>
     <li id="menu-item-38" class="w3-bar-item w3-button menu-item-38">
       <a [routerLink]="['/contact']">{{'Contact' | translate}}</a>
     </li>

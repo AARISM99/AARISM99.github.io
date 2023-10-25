@@ -19,7 +19,7 @@
         <div class="navbar-header col-lg-3 pl-4 pr-4">
           <div class="logo">
             <a [routerLink]="['/home']" class="navbar-brand">
-              <img src="assets/images/logo_wit.png" [alt]="'Startpagina logo' | translate" i18n-alt>
+              <img src="assets/images/logo_wit.png" [alt]="'Startpagina logo' | translate">
             </a>
           </div>
         </div>
@@ -30,22 +30,31 @@
                 <a [routerLink]="['/home']" aria-current="page">{{'Welkom' | translate}}</a>
               </li>
               <li id="menu-item-2" class="menu-item menu-item-2">
-                <a [routerLink]="['/inscription']">{{'Inschrijven lessen' | translate}}</a>
+                <a [routerLink]="['/inscription']">{{'Inschrijven' | translate}}</a>
               </li>
               <li id="menu-item-3" class="menu-item menu-item-3">
-                <a [routerLink]="['/agenda']">{{'Agenda' | translate}}</a></li>
-              <li id="menu-item-4" class="menu-item menu-item-4">
-                <a [routerLink]="['/donation']">{{'Doneren' | translate}}</a>
+                <a [routerLink]="['/agenda']">{{'Agenda' | translate}}</a>
+                <span class="badge">{{'spoedig' | translate}}</span>
               </li>
-              <li id="menu-item-5" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5">
+              <li id="menu-item-4" class="menu-item menu-item-4">
+                <a [routerLink]="['/activities']">{{'Activiteiten' | translate}}</a>
+              </li>
+              <li id="menu-item-5" class="menu-item menu-item-5">
+                <a [routerLink]="['/donation']">{{'Doneren' | translate}}</a>
+                <span class="badge">{{'spoedig' | translate}}</span>
+              </li>
+              <li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6">
                 <a [routerLink]="['/prayer-times']">{{'Gebedstijden' | translate}}</a>
               </li>
               <!-- <li id="menu-item-41" class="menu-item menu-item-41"><a
                   href="moskee-bezoeken/index.html">Moskee Bezoeken</a></li> -->
-              <li id="menu-item-6" class="menu-item menu-item-6">
+              <li id="menu-item-7" class="menu-item menu-item-7">
+                <a [routerLink]="['/blogs']">{{'Blogs' | translate}}</a>
+              </li>
+              <li id="menu-item-8" class="menu-item menu-item-8">
                 <a [routerLink]="['/contact']">{{'Contact' | translate}}</a>
               </li>
-              <li id="menu-item-7" class="menu-item lang menu-item-7" tabindex="0">
+              <li id="menu-item-9" class="menu-item lang menu-item-9" tabindex="0">
                 <!-- <a href="javascript:void(0)" (focus)="openLanguagesList()" (blur)="closeLanguagesList()"><i class="fa fa-language mr-1"></i> {{lang}} <i class="ml-2 fa fa-angle-down"></i></a>
                 <ul id="lang-list" class="hidden lang-list">
                   <li class="lang-item" value="nl">Nederlands</li>

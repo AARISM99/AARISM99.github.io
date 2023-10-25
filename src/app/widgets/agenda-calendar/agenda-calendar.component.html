@@ -18,16 +18,42 @@
           <div id="content_activities" data-toggle="tab" class="tab-content active">
             <owl-carousel-o *ngIf="activities.length > 0" [options]="customSlideActivitiesOptions">
               <ng-template carouselSlide *ngFor="let activity of activities">
-                <div class="activity-content m-4 p-4 radius">
+                <div class="activity-content m-4 p-4">
                   <div class="img-content col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-12 p-0">
                     <img class="img-responsive" [src]="activity.image" alt="img" />
                   </div>
-                  <div class="description col-xl-9 col-lg-8 col-md-8 col-sm-6 col-xs-12">
+                  <div class="description-content col-xl-9 col-lg-8 col-md-8 col-sm-6 col-xs-12">
                     <h5 class="title default-underline">{{activity.title![constants._lang]}}</h5>
-                    <p>{{activity.description![constants._lang].length > 245 ? activity.description![constants._lang].substring(0, 245) + "..." : activity.description![constants._lang]}}</p>
-                    <h5 class="from-to mb-3"><i class="fa fa-calendar"></i> {{activity.from | localeDate:constants._lang:'EEEE d MMMM'}} - {{activity.to | localeDate:constants._lang:'EEEE d MMMM'}}</h5>
-                    <h5 class="location mb-3"><i class="fa fa-map-marker"></i> {{activity.location![constants._lang]}}</h5>
-                    <a class="more-contents" [routerLink]="['/agenda/activities/' + activity.title![constants._lang]]" [queryParams]="{vqi: encodeString(activity._id), lang: constants._lang}">{{'Meer over' | translate}} <i class="fa arrow ml-1"></i></a>
+                    <p class="description">{{activity.description![constants._lang].length > 245 ? activity.description![constants._lang].substring(0, 245) + "..." : activity.description![constants._lang]}}</p>
+                    <table class="other-details m-0">
+                      <tbody>
+                        <tr class="from-to">
+                          <td class="icon">
+                            <i class="fa fa-calendar"></i>
+                          </td>
+                          <td>
+                            <h5> {{activity.from | localeDate:constants._lang:'EEEE d MMMM' | titlecase}} - {{activity.to | localeDate:constants._lang:'EEEE d MMMM' | titlecase}}</h5>
+                          </td>
+                        </tr>
+                        <tr class="location">
+                          <td class="icon">
+                            <i class="fa fa-solid fa-map-marker"></i>
+                          </td>
+                          <td>
+                            <h5> {{activity.locationAddress![constants._lang]}}</h5>
+                          </td>
+                        </tr>
+                        <tr class="by">
+                          <td class="icon">
+                            <i class="fa fa-user"></i>
+                          </td>
+                          <td>
+                            <h5> {{activity.by![constants._lang]}}</h5>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <a class="more-contents" [routerLink]="['/activities/' + activity.title![constants._lang]]" [queryParams]="{vqi: encodeString(activity._id), lang: constants._lang}">{{'Meer over' | translate}} <i class="fa arrow ml-1"></i></a>
                   </div>
                 </div>
               </ng-template>
@@ -36,7 +62,7 @@
               <p>{{'Momenteel geen activiteit gevonden !' | translate}}</p>
             </div>
             <div class="footer">
-              <a class="more-contents" [routerLink]="['/agenda']" [queryParams]="{lang: constants._lang}">{{'Meer' | translate}} <i class="fa arrow ml-1"></i></a>
+              <a class="more-contents" [routerLink]="['/activities']" [queryParams]="{lang: constants._lang}">{{'Meer' | translate}} <i class="fa arrow ml-1"></i></a>
             </div>
           </div>
           <div id="content_program" data-toggle="tab" class="tab-content">

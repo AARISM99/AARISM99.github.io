@@ -29,7 +29,7 @@
 </div>
 
 <div class="main-container-1">
-  <div class="container">
+  <div class="container p0">
     <div class="row m-0 introduction">
       <div class="col-md-6 col-sm-12 col-xs-12 mt-3 mb-5">
         <div>
@@ -88,30 +88,33 @@
           </div>
       </div>
       <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-12 p-5" *ngFor="let news of recentNews">
+        <div class="col-lg-4 col-md-6 col-sm-12 p-5" *ngFor="let blog of recentBlogs">
             <div class="person-card">
                 <div class="person-img">
-                    <a class="img-link">
+                    <a class="img-link" [routerLink]="['/blogs/'+ blog?.title![constants._lang]]" [queryParams]="{vqi: encodeString(blog._id), lang: constants._lang}">
                       <span><i class="icon-eye" aria-hidden="true"></i></span>
-                      <img [src]="news?.image" alt="image.jpg" class="img">
+                      <img [src]="blog?.image" alt="image.jpg" class="img">
                     </a>
                 </div>
                 <div class="person-content">
                     <h3>
-                      <a href="javascript:void(0)" class="title-white">{{news!.title![constants._lang]}}</a>
+                      <a href="javascript:void(0)" class="title-white">{{blog!.title![constants._lang]}}</a>
                     </h3>
-                    <ul class="gb-list">
-                        <li>
-                          <a href="javascript:void(0)"> <i class="icon-comment" aria-hidden="true"></i>{{news?.date_publication | date:undefined:undefined:constants._lang}}</a>
+                    <ul class="gb-list mb-3">
+                        <li class="author">
+                          <a href="javascript:void(0)"> <i class="fa fa-user m-1" aria-hidden="true"></i>&nbsp;{{blog.author![constants._lang]}}</a>
+                        </li>
+                        <li class="date_publication">
+                          <a href="javascript:void(0)"> <i class="icon-comment" aria-hidden="true"></i>{{blog?.date_publication | localeDate:'EEEE d MMMM':constants._lang}}</a>
                         </li>
                     </ul>
                     <p>
-                      {{news!.summary![constants._lang]}}
+                      {{blog!.summary![constants._lang]}}
                     </p>
                 </div>
                 <div class="buttons">
-                    <a *ngIf="news?.external" [href]="news?.external_link" class="btn btn-default">{{'Meer lezen' | translate}}</a>
-                    <a *ngIf="!news?.external" [routerLink]="['/news/'+ news?.title![constants._lang]]" [queryParams]="{vqi: encodeString(news._id), lang: constants._lang}" class="btn btn-default">{{'Meer lezen' | translate}}</a>
+                    <!-- <a *ngIf="blog?.external" [href]="blog?.external_link" class="btn btn-default">{{'Meer lezen' | translate}}</a> -->
+                    <a [routerLink]="['/blogs/'+ blog?.title![constants._lang]]" [queryParams]="{vqi: encodeString(blog._id), lang: constants._lang}" class="btn btn-default">{{'Meer lezen' | translate}}</a>
                 </div>
             </div>
         </div>

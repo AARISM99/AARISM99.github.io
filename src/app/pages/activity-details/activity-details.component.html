@@ -1,0 +1,112 @@
+<div class="banner activity-details" style="background-image: url('assets/images/IMG_7823.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; opacity: 1;">
+  <div class="shadow-main">
+    <h1 class="title">{{main_activity.title![constants._lang]}}</h1>
+    <app-breadcrumb [routes]="[{title: title![constants._lang], path: '/activities'}, {title: main_activity.title![constants._lang], path: null}]"></app-breadcrumb>
+    <!-- <div class="item-content">
+      <div class="gb-middle">
+        <div class="slider-content activity-details">
+          <div class="container p0">
+            <h2 class="title">{{main_activity.title![constants._lang]}}</h2>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>
+
+<div class="main-container activity-details">
+  <div class="container mt-8">
+    <div class="image-container">
+      <div class="activity-image" [ngStyle]="{'background-image': 'url(' + main_activity.image + ')'}">
+      </div>
+    </div>
+    <section class="activity-about m-4 mt-3">
+      <div class="description-content">
+        <h2 class="activity-title">{{main_activity.title![constants._lang]}}</h2>
+        <!-- <small class="time-from">{{main_activity.from | localeDate:constants._lang:'EEEE, d MMMM' | titlecase}}</small> -->
+        <section class="section-item">
+          <h5 class="subtitle">{{'Datum en tijd' | translate}} :</h5>
+          <p class="subtitle-value">
+            <i class="fa fa-calendar text-danger mr-4 ml-4"></i>
+            {{main_activity.from | localeDate:constants._lang:'EEEE d MMMM' | titlecase}}
+            -
+            {{main_activity.to | localeDate:constants._lang:'EEEE d MMMM' | titlecase}}
+          </p>
+        </section>
+
+        <section class="section-item">
+          <h5 class="subtitle">{{'Ligging' | translate}} :</h5>
+          <p class="subtitle-value">
+            <i class="fa fa-solid fa-map-marker text-secondary mr-4 ml-4"></i>
+            {{main_activity.locationAddress![constants._lang]}}
+            <!-- <iframe [src]="'https://maps.google.com/?q=33.593913694269055,-7.641522984654749'"></iframe> -->
+          </p>
+          <a class="show-more" href="javascript:void(0)" (click)="toogleMap($event)">
+            {{'Kaart weergeven' | translate}}
+          </a>
+          <div id="mapouter" class="mapouter mt-3" style="display: none;">
+            <div class="gmap_canvas" id="gmap_canvas">
+              <iframe id="gmap_iframe" class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=53.1139402,6.1184782&amp;width=600&amp;height=400&amp;hl=en&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-item">
+          <h5 class="subtitle">{{'Over deze activiteit' | translate}} :</h5>
+          <p class="subtitle-value description">{{main_activity.description![constants._lang]}}</p>
+        </section>
+
+        <section class="section-item">
+          <h5 class="subtitle">{{'Door' | translate}} :</h5>
+          <p class="subtitle-value">
+            <i class="fa fa-user mr-4 ml-4"></i>
+            {{main_activity.by![constants._lang]}}</p>
+        </section>
+
+      </div>
+    </section>
+    <section class="more-activities">
+      <h2 class="title default-underline ml-3 mr-3">{{'Meer activiteiten' | translate}}</h2>
+      <a [routerLink]="['/activities']" [queryParams]="{lang: constants._lang}">{{'Meer over' | translate}}</a>
+      <div class="list-activities">
+        <article class="item-activity" *ngFor="let activity of activities" [routerLink]="['/agenda/activities/' + activity.title![constants._lang]]" [queryParams]="{lang: constants._lang, vqi: encodeString(activity._id)}">
+          <div class="img-content">
+            <img src="/assets/images/no_image.png" alt="no_image.png">
+          </div>
+          <div class="description-content">
+            <h5 class="title default-underline">{{activity.title![constants._lang]}}</h5>
+            <p class="description">{{activity.description![constants._lang].length > 100 ? activity.description![constants._lang].substring(0, 100) + "..." : activity.description![constants._lang]}}</p>
+            <table class="other-details m-0">
+              <tbody>
+                <tr class="from-to">
+                  <td class="icon">
+                    <i class="fa fa-calendar"></i>
+                  </td>
+                  <td>
+                    <h5> {{activity.from | localeDate:constants._lang:'EEEE d MMMM' | titlecase}} - {{activity.to | localeDate:constants._lang:'EEEE d MMMM' | titlecase}}</h5>
+                  </td>
+                </tr>
+                <tr class="location">
+                  <td class="icon">
+                    <i class="fa fa-solid fa-map-marker"></i>
+                  </td>
+                  <td>
+                    <h5> {{activity.locationAddress![constants._lang]}}</h5>
+                  </td>
+                </tr>
+                <tr class="by">
+                  <td class="icon">
+                    <i class="fa fa-user"></i>
+                  </td>
+                  <td>
+                    <h5> {{activity.by![constants._lang]}}</h5>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div>
+</div>
