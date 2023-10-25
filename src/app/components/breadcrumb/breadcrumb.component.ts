@@ -31,5 +31,5 @@ export class BreadcrumbComponent implements OnInit {
     // })
   }
 
-  @Input() routes: string[] = [];
+  @Input() routes: any[] = [];
 }

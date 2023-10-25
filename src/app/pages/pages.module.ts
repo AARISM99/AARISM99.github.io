@@ -12,12 +12,14 @@ import { ComponentsModule } from '../components/components.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { WidgetsModule } from '../widgets/widgets.module';
 import { HttpClientModule } from '@angular/common/http';
-import { NewsComponent } from './news/news.component';
 import { SharedModule } from '../shared/shared.module';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { BlogComponent } from './blog/blog.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { ProgramComponent } from './program/program.component';
+import { ActivityDetailsComponent } from './activity-details/activity-details.component';
+import { UnderConstructionComponent } from './under-construction/under-construction.component';
+import { BlogsComponent } from './blogs/blogs.component';
 
 
 @NgModule({
@@ -28,11 +30,13 @@ import { ProgramComponent } from './program/program.component';
     DonationComponent,
     Page404Component,
     PrayerTimesComponent,
-    NewsComponent,
     InscriptionComponent,
+    BlogsComponent,
     BlogComponent,
     ActivitiesComponent,
-    ProgramComponent
+    ProgramComponent,
+    ActivityDetailsComponent,
+    UnderConstructionComponent
   ],
   imports: [
     CommonModule,

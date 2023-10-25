@@ -1,14 +1,16 @@
-<div class="banner" style="background-image: url('assets/images/IMG_7823.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; opacity: 1;">
+<div class="banner under_construction" style="background-image: url('assets/images/IMG_7823.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; opacity: 1;">
   <div class="shadow-main">
     <h1 class="title">{{'Agenda' | translate}}</h1>
-    <app-breadcrumb [routes]="[title[constants._lang]]"></app-breadcrumb>
-    <div class="item-content">
-      <div class="gb-middle">
-        <div class="slider-content agenda">
-
+    <app-breadcrumb [routes]="[{title: title[constants._lang], path: '/agenda'}]"></app-breadcrumb>
+      <div class="banner-content">
+        <h1><i class="fa fa-hourglass-half m-4"></i></h1>
+        <h2>{{'Binnenkort beschikbaar' | translate}}</h2>
+        <h2>{{'Sorry, deze pagina is in aanbouw' | translate}}</h2>
+        <!-- <p>Sorry, the page you are looking for is not found</p> -->
+        <div class="buttons">
+          <button [routerLink]="['/home']" [queryParams]="{lang: constants._lang}" class="btn btn-secondary">{{'Startpagina' | translate}}</button>
         </div>
       </div>
-    </div>
   </div>
 </div>
 

@@ -5,6 +5,7 @@ import { AddZeroIfNbrLtTenFormat } from '../pipes/addZeroIfNbrLtTen.pipe';
 import { TranslateModule } from '@ngx-translate/core';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { LocaleDatePipe } from '../pipes/localedate.pipe';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { LocaleDatePipe } from '../pipes/localedate.pipe';
     AddZeroIfNbrLtTenFormat,
     LocaleDatePipe,
     TranslateModule,
-    CarouselModule
+    CarouselModule,
+    GoogleMapsModule
   ]
 })
 export class SharedModule { }

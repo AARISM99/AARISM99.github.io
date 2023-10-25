@@ -1,20 +1,102 @@
-<div class="banner" style="background-image: url('assets/images/IMG_7823.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; opacity: 1;">
+<div class="banner activities" style="background-image: url('assets/images/IMG_7823.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; opacity: 1;">
   <div class="shadow-main">
     <h1 class="title">{{'Activiteiten' | translate}}</h1>
-    <app-breadcrumb [routes]="[title[constants._lang]]"></app-breadcrumb>
+    <app-breadcrumb [routes]="[{title: title![constants._lang], path: '/activities'}]"></app-breadcrumb>
     <div class="item-content">
       <div class="gb-middle">
         <div class="slider-content activities">
-          <div class="container activity-container">
-            <div class="description-content">
-
-            </div>
-            <div class="img-content">
-              <img src="/assets/images/no_image.png" alt="no_image.png">
+          <div class="container">
+            <div class="activity-container">
+              <div class="description-content">
+                <h5 class="title default-underline">{{main_activity.title![constants._lang]}}</h5>
+                <p class="description">{{main_activity.description![constants._lang]}}</p>
+                <table class="other-details m-0 mb-4">
+                  <tbody>
+                    <tr class="from-to">
+                      <td class="icon">
+                        <i class="fa fa-calendar"></i>
+                      </td>
+                      <td>
+                        <h5> {{main_activity.from | localeDate:constants._lang:'EEEE d MMMM' | titlecase}} - {{main_activity.to | localeDate:constants._lang:'EEEE d MMMM' | titlecase}}</h5>
+                      </td>
+                    </tr>
+                    <tr class="location">
+                      <td class="icon">
+                        <i class="fa fa-solid fa-map-marker"></i>
+                      </td>
+                      <td>
+                        <h5> {{main_activity.locationAddress![constants._lang]}}</h5>
+                      </td>
+                    </tr>
+                    <tr class="by">
+                      <td class="icon">
+                        <i class="fa fa-user"></i>
+                      </td>
+                      <td>
+                        <h5> {{main_activity.by![constants._lang]}}</h5>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a class="more-contents" [routerLink]="['/activities/' + main_activity.title![constants._lang]]" [queryParams]="{vqi: encodeString(main_activity._id), lang: constants._lang}">{{'Meer over' | translate}} <i class="fa arrow ml-1"></i></a>
+              </div>
+              <div class="img-content">
+                <img [src]="main_activity.image" alt="no_image.png">
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+<div class="main-container">
+  <div class="container mt-8">
+    <section class="activity-about">
+
+    </section>
+    <section class="more-activities">
+      <h2 class="title default-underline ml-3 mr-3">{{'Onze activiteiten' | translate}}</h2>
+      <div class="list-activities">
+        <article class="item-activity" *ngFor="let activity of activities" [routerLink]="['/activities/' + activity.title![constants._lang]]" [queryParams]="{lang: constants._lang, vqi: encodeString(activity._id)}">
+          <div class="img-content">
+            <img src="/assets/images/no_image.png" alt="no_image.png">
+          </div>
+          <div class="description-content">
+            <h5 class="title default-underline">{{activity.title![constants._lang]}}</h5>
+            <p class="description">{{activity.description![constants._lang].length > 100 ? activity.description![constants._lang].substring(0, 100) + "..." : activity.description![constants._lang]}}</p>
+            <table class="other-details m-0">
+              <tbody>
+                <tr class="from-to">
+                  <td class="icon">
+                    <i class="fa fa-calendar"></i>
+                  </td>
+                  <td>
+                    <h5> {{activity.from | localeDate:constants._lang:'EEEE d MMMM' | titlecase}} - {{activity.to | localeDate:constants._lang:'EEEE d MMMM' | titlecase}}</h5>
+                  </td>
+                </tr>
+                <tr class="location">
+                  <td class="icon">
+                    <i class="fa fa-solid fa-map-marker"></i>
+                  </td>
+                  <td>
+                    <h5> {{activity.locationAddress![constants._lang]}}</h5>
+                  </td>
+                </tr>
+                <tr class="by">
+                  <td class="icon">
+                    <i class="fa fa-user"></i>
+                  </td>
+                  <td>
+                    <h5> {{activity.by![constants._lang]}}</h5>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </section>
   </div>
 </div>

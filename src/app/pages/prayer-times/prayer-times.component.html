@@ -1,7 +1,7 @@
 <div class="banner" style="background-image: url('assets/images/IMG_7823.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; opacity: 1;">
   <div class="shadow-main">
     <h1 class="title">{{'Gebedstijden' | translate}}</h1>
-    <app-breadcrumb [routes]="[title[constants._lang]]"></app-breadcrumb>
+    <app-breadcrumb [routes]="[{title: title[constants._lang], path: '/prayer-times'}]"></app-breadcrumb>
     <div class="boxCard boxCard-lg" id="prayertimes-card">
       <div class="pt-card-header">
         <div class="d-flex flex-column pt-address">

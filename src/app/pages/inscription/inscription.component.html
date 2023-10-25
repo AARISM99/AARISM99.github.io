@@ -1,7 +1,7 @@
 <div class="banner inscription" style="background-image: url('assets/images/IMG_7823.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; opacity: 1;">
   <div class="shadow-main">
-    <h1 class="title">{{'Inschrijven lessen' | translate}}</h1>
-    <app-breadcrumb [routes]="[title[constants._lang]]"></app-breadcrumb>
+    <h1 class="title">{{'Inschrijven' | translate}}</h1>
+    <app-breadcrumb [routes]="[{title: title[constants._lang], path: '/inscription'}]"></app-breadcrumb>
     <div class="item-content">
       <div class="gb-middle">
         <div class="slider-content inscription">
@@ -19,7 +19,7 @@
 </div>
 
 <div class="main-container">
-  <div class="container mt-6">
+  <div class="container mt-8">
     <h2 class="title default-underline">{{'Inschrijvingsformulier voor studenten' | translate}}</h2>
     <div class="calendarConfigForm">
       <form [formGroup]="inscriptionForm" (ngSubmit)="register()">

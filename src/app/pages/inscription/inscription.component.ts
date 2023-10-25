@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
-import { TranslateService } from '@ngx-translate/core';
 import { GlobalConstants } from 'src/app/global/globalConstants';
 import { KeyVal } from 'src/app/models/keyValue.model';
 
@@ -33,21 +31,9 @@ export class InscriptionComponent {
 
   inscriptionForm!: FormGroup;
 
-  constructor(private translateService: TranslateService,
-    private activatedRoute: ActivatedRoute,
-    private formBuilder: FormBuilder,
-  ){}
+  constructor(private formBuilder: FormBuilder){}
 
   ngOnInit(): void {
-
-    // this.activatedRoute.queryParams.subscribe(params => {
-    //   if(params['lang']) {
-    //     this.constants._lang = params['lang'];
-    //   }
-    //   else {
-    //     this.translateService.use(this.constants._lang);
-    //   }
-    // })
 
     this.inscriptionForm = this.formBuilder.group({
       firstname: ["", [Validators.required, Validators.pattern("[a-zA-Z ]*")]],

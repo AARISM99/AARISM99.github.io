@@ -5,5 +5,8 @@
       {{'Startpagina' | translate}}
     </a>
   </li>
-  <li *ngFor="let route of routes">{{route | titlecase}}</li>
+  <li *ngFor="let route of routes">
+    <a *ngIf="route.path" [routerLink]="[route.path]">{{route.title}}</a>
+    <a *ngIf="!route.path" [routerLink]="[route.path]">{{route.title}}</a>
+  </li>
 </ul>

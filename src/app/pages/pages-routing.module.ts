@@ -6,10 +6,11 @@ import { DonationComponent } from './donation/donation.component';
 import { ContactComponent } from './contact/contact.component';
 import { Page404Component } from './page404/page404.component';
 import { PrayerTimesComponent } from './prayer-times/prayer-times.component';
-import { NewsComponent } from './news/news.component';
 import { InscriptionComponent } from './inscription/inscription.component';
 import { BlogComponent } from './blog/blog.component';
 import { ActivitiesComponent } from './activities/activities.component';
+import { ActivityDetailsComponent } from './activity-details/activity-details.component';
+import { BlogsComponent } from './blogs/blogs.component';
 
 const routes: Routes = [
   {
@@ -30,8 +31,12 @@ const routes: Routes = [
     component: AgendaComponent
   },
   {
-    path: 'agenda/activities',
+    path: 'activities',
     component: ActivitiesComponent
+  },
+  {
+    path: 'activities/:title',
+    component: ActivityDetailsComponent
   },
   {
     path: 'donation',
@@ -46,12 +51,12 @@ const routes: Routes = [
     component: ContactComponent
   },
   {
-    path: 'blog',
-    component: BlogComponent
+    path: 'blogs',
+    component: BlogsComponent
   },
   {
-    path: 'blog/:name/:id',
-    component: NewsComponent
+    path: 'blogs/:title',
+    component: BlogComponent
   },
   {
     path: 'page404',
